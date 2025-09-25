@@ -9,7 +9,7 @@ const FeaturesSection = () => {
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
           <div className="flex flex-col md:flex-row items-center justify-center space-y-3 xs:space-y-4 md:space-y-0 px-4 xs:px-6 sm:px-0">
-            {/* First Circle */}
+            {/* First Circle - 24/7 Trading */}
             <div
               className="rounded-full p-[1px] md:mr-[-32px]"
               style={{
@@ -30,7 +30,7 @@ const FeaturesSection = () => {
                       transform: "none",
                     }}
                   >
-                    Advanced
+                    Trade 24/7
                   </p>
                   <h3
                     className=" text-[30px] sm:text-5xl lg:text-6xl my-1 sm:my-2 md:my-3 text-white leading-tight"
@@ -40,7 +40,7 @@ const FeaturesSection = () => {
                       transform: "none",
                     }}
                   >
-                    AI/ML
+                    Without
                   </h3>
                   <p
                     className="text-base sm:text-lg text-white"
@@ -50,13 +50,13 @@ const FeaturesSection = () => {
                       transform: "none",
                     }}
                   >
-                    Algorithms
+                    Emotions
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Second Circle - Featured */}
+            {/* Second Circle - Featured - Backtested */}
             <div
               className="bg-primary rounded-full w-[280px] xs:w-[320px] sm:w-[380px] md:w-[420px] h-[120px] xs:h-[140px] sm:h-[180px] md:h-[200px] flex items-center justify-center z-10 shadow-2xl shadow-primary/30"
               style={{
@@ -70,24 +70,24 @@ const FeaturesSection = () => {
                   className="text-base sm:text-lg text-white"
                   style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
                 >
-                  24/7
+                  Proven &
                 </p>
                 <h3
                   className=" text-[30px] sm:text-5xl lg:text-6xl my-1 sm:my-2 md:my-3 text-white leading-tight"
                   style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
                 >
-                  Trading
+                  Backtested
                 </h3>
                 <p
                   className="text-base sm:text-lg text-white"
                   style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
                 >
-                  Automation
+                  Strategies
                 </p>
               </div>
             </div>
 
-            {/* Third Circle */}
+            {/* Third Circle - Multi-Market */}
             <div
               className="rounded-full p-[1px] md:ml-[-32px]"
               style={{
@@ -108,7 +108,7 @@ const FeaturesSection = () => {
                       transform: "none",
                     }}
                   >
-                    Professional
+                    Multi-Market
                   </p>
                   <h3
                     className=" text-[30px] sm:text-5xl lg:text-6xl my-1 sm:my-2 md:my-3 text-white leading-tight"
@@ -118,7 +118,7 @@ const FeaturesSection = () => {
                       transform: "none",
                     }}
                   >
-                    Grade
+                    Coverage
                   </h3>
                   <p
                     className="text-base sm:text-lg text-white"
@@ -128,7 +128,7 @@ const FeaturesSection = () => {
                       transform: "none",
                     }}
                   >
-                    Solutions
+                    Forex, Crypto, Stocks
                   </p>
                 </div>
               </div>
@@ -142,10 +142,10 @@ const FeaturesSection = () => {
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
           <span className="text-primary ">
-            Advanced Algorithmic Trading Solutions
+            At Nupips, we believe trading should be
           </span>
           <br className="block" />
-          <span>Professional-Grade Automation for Everyone.</span>
+          <span>smarter, faster, and stress-free.</span>
           <br />
         </p>
 
@@ -154,22 +154,64 @@ const FeaturesSection = () => {
           className="text-xl text-[#454545] md:text-3xl sm:text-5xl leading-[125%] mb-14"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          NUPIPS delivers <br />
-          <span className="text-white">cutting-edge automation</span> solutions
+          Our mission is to empower <br />
+          <span className="text-white">traders and investors</span> with
           <br className="hidden sm:block" />
-          tailored for traders and institutions.
+          cutting-edge algorithmic trading solutions.
         </p>
 
-        {/* About Content Section */}
-        <div className="max-w-3xl mx-auto mt-16">
-          <p className="text-lg sm:text-xl text-neutral-400 leading-relaxed text-center">
-            NUPIPS is a dedicated service brand operating under advanced
-            algorithmic trading solutions, delivering professional-grade
-            automation solutions tailored for individuals, institutions, and
-            businesses across various sectors. Our primary focus is to reduce
-            manual efforts, minimize errors, and enhance digital transformation
-            using secure and scalable automation technologies.
-          </p>
+        {/* Key Benefits Grid */}
+        <div className="max-w-4xl mx-auto mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center space-y-4 p-6 bg-black/30 rounded-lg border border-white/10">
+              <h4 className="text-xl font-semibold text-white">
+                Fast & Reliable Execution
+              </h4>
+              <p className="text-neutral-400">
+                Enter and exit trades in milliseconds with zero delays
+              </p>
+            </div>
+            <div className="text-center space-y-4 p-6 bg-black/30 rounded-lg border border-white/10">
+              <h4 className="text-xl font-semibold text-white">
+                Risk-Managed Trading
+              </h4>
+              <p className="text-neutral-400">
+                Stop loss, trailing SL, and position sizing included
+              </p>
+            </div>
+            <div className="text-center space-y-4 p-6 bg-black/30 rounded-lg border border-white/10">
+              <h4 className="text-xl font-semibold text-white">
+                Real-Time Execution
+              </h4>
+              <p className="text-neutral-400">
+                Bots react instantly to market changes
+              </p>
+            </div>
+            <div className="text-center space-y-4 p-6 bg-black/30 rounded-lg border border-white/10">
+              <h4 className="text-xl font-semibold text-white">
+                Cloud Hosting
+              </h4>
+              <p className="text-neutral-400">
+                Trade without keeping your computer on
+              </p>
+            </div>
+            <div className="text-center space-y-4 p-6 bg-black/30 rounded-lg border border-white/10">
+              <h4 className="text-xl font-semibold text-white">
+                User Dashboard & Mobile Access
+              </h4>
+              <p className="text-neutral-400">
+                Monitor your bots anytime, anywhere
+              </p>
+            </div>
+            <div className="text-center space-y-4 p-6 bg-black/30 rounded-lg border border-white/10">
+              <h4 className="text-xl font-semibold text-white">
+                24/7 Monitoring
+              </h4>
+              <p className="text-neutral-400">
+                Continuous uptime for round-the-clock trading
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

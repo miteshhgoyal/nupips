@@ -2,26 +2,96 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="flex items-center justify-center py-16 sm:py-0 sm:pb-20 -mt-20">
-      <div className="flex space-y-10 flex-col items-center justify-center text-center text-white px-4 sm:px-0 lg:px-0 pt-8 sm:pt-12">
-        <div className="w-full max-w-4xl mx-auto mt-16 text-center space-y-8">
-          <h2
-            className="text-2xl sm:text-5xl font-semibold text-center mb-5 text-white "
-            style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
-          >
-            Join the NUPIPS Revolution!!
-          </h2>
+    <div className="flex items-center justify-center py-16 sm:py-20">
+      <div className="flex space-y-10 flex-col items-center justify-center text-center text-white px-4 sm:px-0 lg:px-0">
+        <div className="w-full max-w-4xl mx-auto space-y-8">
+          <div className="text-left space-y-6 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-neutral-300 leading-relaxed">
+              At <strong className="text-white">Nupips</strong>, we believe
+              trading should be
+              <strong className="text-primary">
+                {" "}
+                smarter, faster, and stress-free
+              </strong>
+              . Our mission is to empower traders and investors with{" "}
+              <strong className="text-white">
+                cutting-edge algorithmic trading solutions
+              </strong>{" "}
+              that deliver performance without compromise.
+            </p>
 
-          <p className="text-base sm:text-lg text-neutral-400 leading-relaxed max-w-3xl mx-auto">
-            Don't let the unpredictable & volatile market conditions affect your
-            trading performance & profitability. Take charge of your own trading
-            destiny with NUPIPS, the innovative and dynamic platform that
-            enables you to harness the power of algorithmic trading. With
-            NUPIPS, you can make informed, data-driven & strategic decisions
-            that will boost your trading results as well as confidence. Don't
-            settle for less than you deserve. Upgrade your trading experience
-            today & see the difference for yourself. Get started now...
-          </p>
+            <p className="text-lg sm:text-xl text-neutral-300 leading-relaxed">
+              With a team of{" "}
+              <strong className="text-white">
+                quantitative analysts, software developers, and experienced
+                traders
+              </strong>
+              , we design bots that trade the markets with precision. Whether
+              you are an
+              <strong className="text-white">
+                {" "}
+                individual trader, a prop firm, or a financial institution
+              </strong>
+              , Nupips provides tailored solutions to suit your needs.
+            </p>
+
+            <div className="mt-12">
+              <h3 className="text-xl sm:text-2xl font-semibold text-primary mb-6 text-center">
+                Why Choose Nupips?
+              </h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex items-start space-x-3 p-4 bg-black/30 rounded-lg border border-white/10">
+                  <div>
+                    <h4 className="font-semibold text-white mb-2">
+                      Transparency
+                    </h4>
+                    <p className="text-neutral-400">
+                      Clear reports, no hidden logic.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3 p-4 bg-black/30 rounded-lg border border-white/10">
+                  <div>
+                    <h4 className="font-semibold text-white mb-2">Security</h4>
+                    <p className="text-neutral-400">
+                      Enterprise-grade encryption & secure hosting.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3 p-4 bg-black/30 rounded-lg border border-white/10">
+                  <div>
+                    <h4 className="font-semibold text-white mb-2">
+                      Customization
+                    </h4>
+                    <p className="text-neutral-400">
+                      Strategies designed around your goals.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3 p-4 bg-black/30 rounded-lg border border-white/10">
+                  <div>
+                    <h4 className="font-semibold text-white mb-2">
+                      Client-Centric
+                    </h4>
+                    <p className="text-neutral-400">
+                      Full support from onboarding to live deployment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Final CTA Section */}
+          <div className="mt-16 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+              Take the next step towards smarter trading.
+            </h2>
+          </div>
         </div>
       </div>
     </div>

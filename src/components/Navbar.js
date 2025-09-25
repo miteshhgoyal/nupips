@@ -31,7 +31,7 @@ const Navbar = () => {
                 </a>
 
                 {/* Navigation Links - Centered */}
-                <div className="flex-1 flex justify-center">
+                <div className="flex justify-center">
                     <div className="flex items-center space-x-1">
                         {navLinks.map((link, index) => (
                             <a
@@ -44,25 +44,6 @@ const Navbar = () => {
                             </a>
                         ))}
                     </div>
-                </div>
-
-                {/* Action Buttons */}
-                <div className="flex items-center gap-3 flex-shrink-0">
-                    <a
-                        href="/login"
-                        className="px-4 py-2 rounded-lg bg-transparent text-base font-medium text-white hover:text-neutral-200 hover:bg-white/10 transition-all duration-200"
-                    >
-                        Login
-                    </a>
-
-                    <ShimmerButton
-                        variant="gradient"
-                        size="md"
-                        className="flex items-center gap-2"
-                    >
-                        <TrendingUp className="w-5 h-5" />
-                        Buy Challenge
-                    </ShimmerButton>
                 </div>
             </div>
 
@@ -84,12 +65,7 @@ const Navbar = () => {
                     </a>
 
                     <div className='flex items-center gap-1'>
-                        <a
-                            href="/login"
-                            className="block px-4 py-3 text-white hover:text-neutral-200 hover:bg-white/5 rounded-lg transition-all duration-200 font-medium"
-                        >
-                            Login
-                        </a>
+
 
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -115,17 +91,6 @@ const Navbar = () => {
                                 {link.label}
                             </a>
                         ))}
-
-                        <div className="pt-4 w-fit">
-                            <ShimmerButton
-                                variant="gradient"
-                                size="md"
-                                className="flex items-center justify-center gap-2 w-full"
-                            >
-                                <TrendingUp className="w-4 h-4" />
-                                Buy Challenge
-                            </ShimmerButton>
-                        </div>
                     </div>
                 </div>
             </div>

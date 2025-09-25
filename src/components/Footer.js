@@ -82,17 +82,11 @@ const Footer = () => {
                             </h3>
 
                             <div className="flex space-x-4 mb-12">
-                                <ShimmerButton
-                                    variant="gradient"
-                                    className="flex items-center gap-2"
-                                >
-                                    <TrendingUp className="w-6 h-6" />
-                                    Buy Challenge
-                                </ShimmerButton>
 
-                                <button className="border border-white text-white px-6 py-3 rounded-[10px] bg-transparent hover: /10 transition-all duration-300 font-medium">
+
+                                <a href='/contact' className="border border-white text-white px-6 py-3 rounded-[10px] bg-transparent hover: /10 transition-all duration-300 font-medium">
                                     Talk To Us
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -144,7 +138,7 @@ const Footer = () => {
                             </div>
 
                             {/* Legal Links */}
-                            <div className="space-y-3">
+                            {/* <div className="space-y-3">
                                 <h4 className="text-lg font-semibold text-neutral-400 mb-3">
                                     Legal
                                 </h4>
@@ -160,10 +154,10 @@ const Footer = () => {
                                         </li>
                                     ))}
                                 </ul>
-                            </div>
+                            </div> */}
 
                             {/* Contact Links */}
-                            <div className="space-y-3">
+                            {/* <div className="space-y-3">
                                 <h4 className="text-lg font-semibold text-neutral-400 mb-3">
                                     Contact Us
                                 </h4>
@@ -179,7 +173,7 @@ const Footer = () => {
                                         </li>
                                     ))}
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

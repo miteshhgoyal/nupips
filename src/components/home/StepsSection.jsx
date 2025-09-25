@@ -28,7 +28,6 @@ const StepsSection = () => {
       title: "Funded Capital",
       description: [
         "Keep up to 90% of your profits.",
-        "Withdraw your earnings every Friday.",
         "Your edge. Your profits. Your freedom.",
       ],
     },
@@ -182,9 +181,6 @@ const StepsSection = () => {
                   <div className="space-y-3">
                     <p className="text-neutral-400 leading-5 sm:leading-3 text-sm sm:text-base">
                       Keep up to 90% of your profits.
-                    </p>
-                    <p className="text-neutral-400 leading-5 sm:leading-3 text-sm sm:text-base">
-                      Withdraw your earnings every Friday.
                     </p>
                     <p className="text-neutral-400 leading-5 sm:leading-3 text-sm sm:text-base">
                       Your edge. Your profits. Your freedom.

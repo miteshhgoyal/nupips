@@ -3,17 +3,15 @@ import { Check, X } from "lucide-react";
 
 const ComparisonSection = () => {
   const features = [
-    "Weekly Friday Payouts",
-    "News Trading",
-    "Scalping",
-    "Hedging",
-    "No consistency rule",
-    "Multiple Device /IP Allowed",
-    "Bank/UPI and Crypto Payouts",
-    "High Leverage (Across all the segments)",
-    "Forex, Crypto, Commodities Instruments",
-    "24/7 Multi Language Support",
-    "MT5 Trading Platform",
+    "Transparency - Clear reports, no hidden logic",
+    "Security - Enterprise-grade encryption & hosting",
+    "Customization - Strategies designed around your goals",
+    "Client-Centric - Full support from onboarding to deployment",
+    "Multi-Asset Support - Forex, Crypto, Stocks, Commodities",
+    "Real-Time Execution - Instant market reaction",
+    "Cloud Hosting - 24/7 operation without your computer",
+    "Risk Management - Automated SL, TP, position sizing",
+    "API Integration - MT4, MT5, TradingView, Zerodha, Binance",
   ];
 
   const renderTableRow = (feature, index) => (
@@ -63,10 +61,11 @@ const ComparisonSection = () => {
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
           <h2 className="text-2xl sm:text-5xl font-semibold text-center mb-5">
-            We listened. We understood.
+            Why Choose Nupips?
           </h2>
           <p className="text-neutral-300 sm:px-0 px-6 max-w-xl mx-auto text-sm sm:text-lg text-center">
-            We delivered what others left out.
+            We deliver what others miss - complete algorithmic trading
+            solutions.
           </p>
         </div>
 
@@ -83,7 +82,7 @@ const ComparisonSection = () => {
                   <th className="px-2 py-2 sm:px-6 sm:py-4 text-left"></th>
                   <th className="px-1 py-2 sm:px-4 sm:py-4 text-center">
                     <span className="text-[#FF5B19] font-[600] whitespace-nowrap text-xs sm:text-base">
-                      We Offer
+                      Nupips Offers
                     </span>
                   </th>
                   <th className="px-1 py-2 sm:px-4 sm:py-4 text-center">
@@ -109,7 +108,7 @@ const ComparisonSection = () => {
                   <th className="px-2 py-2 sm:px-6 sm:py-4 text-left"></th>
                   <th className="px-1 py-2 sm:px-4 sm:py-4 text-center">
                     <span className="text-[#FF5B19] font-[600] whitespace-nowrap text-xs sm:text-base">
-                      We Offer
+                      Nupips Offers
                     </span>
                   </th>
                   <th className="px-1 py-2 sm:px-4 sm:py-4 text-center">
@@ -140,7 +139,7 @@ const ComparisonSection = () => {
                   <th className="px-2 py-2 sm:px-6 sm:py-4 text-left"></th>
                   <th className="px-1 py-2 sm:px-4 sm:py-4 text-center">
                     <span className="text-[#FF5B19] font-[600] whitespace-nowrap text-xs sm:text-base">
-                      We Offer
+                      Nupips
                     </span>
                   </th>
                   <th className="px-1 py-2 sm:px-4 sm:py-4 text-center">

@@ -10,7 +10,7 @@ const page = () => {
             <Hero
                 title="Pioneering Algorithmic Forex Trading"
                 subtitle="The $7.5 trillion forex market demands precision, not guesswork.<br/>We've engineered intelligent trading algorithms that never sleep, never panic, and never miss opportunities."
-                button={{ href: "", text: "Deploy Your Trading Bot" }}
+                button={{ href: "", text: "Start Automated Trading" }}
             />
             <HeroStatement />
             <AboutFeatures />

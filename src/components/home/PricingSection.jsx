@@ -1,295 +1,175 @@
 "use client";
 import React, { useState } from "react";
-import { Crown } from "lucide-react";
+import { Check } from "lucide-react";
 
 const PricingSection = () => {
-  const [selectedAmount, setSelectedAmount] = useState("$5K");
-  const [selectedStep, setSelectedStep] = useState("Basic Bot");
+  const [selectedPlan, setSelectedPlan] = useState("Pro");
 
-  // Pricing data for different amounts
-  const pricingData = {
-    $5K: {
-      basicBot: {
-        accountSize: "$5K",
-        profitSplit: "80%",
-        profitTarget: "10% ($500)",
-        maxDailyLoss: "3% ($150)",
-        maxDrawdown: "6% ($300)",
-        leverage: "Up to 1:100",
-        platform: "MT5 + Algo Dashboard",
-        challengeFee: "$70.00",
-      },
+  const plans = [
+    {
+      name: "Starter Plan",
+      description: "Perfect for individual traders getting started",
+      features: [
+        "Pre-built bots",
+        "Basic dashboard access",
+        "Email support",
+        "1 trading account",
+        "Basic risk controls",
+        "Standard execution speed",
+      ],
+      color: "green",
+      price: "Contact for pricing",
+      popular: false,
     },
-    // Add more pricing data as needed
-  };
-
-  const amounts = ["$5K", "$15K", "$25K", "$50K", "$100K", "$200K"];
+    {
+      name: "Pro Plan",
+      description: "Advanced features for serious traders",
+      features: [
+        "Custom bot development",
+        "Advanced risk controls",
+        "Priority support & updates",
+        "Multiple trading accounts",
+        "Advanced analytics",
+        "API access",
+        "Fast execution",
+        "Full customization",
+      ],
+      color: "primary",
+      price: "Contact for pricing",
+      popular: true,
+    },
+    {
+      name: "Enterprise Plan",
+      description: "Institutional-grade solutions",
+      features: [
+        "Institutional-grade infrastructure",
+        "API connectivity & multi-bot deployment",
+        "Dedicated support team",
+        "Custom integrations",
+        "White-label solutions",
+        "SLA guarantees",
+        "Priority execution",
+        "Custom development",
+      ],
+      color: "red",
+      price: "Contact for pricing",
+      popular: false,
+    },
+  ];
 
   return (
     <div className="flex items-center justify-center py-16 sm:py-20">
       <div className="bg-transparent flex flex-col items-center justify-center px-4 space-y-16">
         <div style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}>
-          <div className="w-full mb-48 max-w-lg mx-auto px-3 sm:px-0 text-white relative">
-            <div className="relative z-10">
-              {/* Header */}
-              <div className="text-center mb-6 sm:mb-10">
-                <h1 className="text-2xl sm:text-4xl font-bold mb-2">
-                  Deploy. Trade. Profit.
-                </h1>
-                <p className="text-gray-400 text-sm sm:text-base px-2 sm:px-0">
-                  Launch forex algorithms with capital up to $200K. Automated
-                  trading with high profit splits.
-                </p>
-              </div>
-
-              {/* Amount Selection Tabs */}
-              <div
-                className="p-[1px] w-full max-w-fit md:p-[2px] rounded-full mx-auto mb-8 sm:mb-12"
-                style={{
-                  background:
-                    "linear-gradient(190.25deg, #3E3E3E 12.7%, #FF3500 48.47%, #3E3E3E 81.58%)",
-                }}
-              >
-                <div
-                  id="interactive-pricing"
-                  className="flex justify-center items-center bg-black rounded-full p-1 px-2 gap-1 sm:gap-2"
-                >
-                  {amounts.map((amount, index) => (
-                    <div
-                      key={amount}
-                      className="p-[0.5px] md:p-[1px] justify-center items-center text-center rounded-full"
-                    >
-                      {index === 0 ? (
-                        // First button (selected)
-                        <button
-                          className="bg-primary py-1 sm:py-2 px-2 sm:px-4 text-xs sm:text-sm rounded-full text-white transition-colors duration-300 flex justify-center items-center whitespace-nowrap"
-                          onClick={() => setSelectedAmount(amount)}
-                        >
-                          {amount}
-                        </button>
-                      ) : amount === "$100K" ? (
-                        // Special $100K button with icon
-                        <div
-                          className="p-[0.5px] md:p-[1px] justify-center items-center text-center rounded-full"
-                          style={{
-                            background:
-                              "linear-gradient(59.67deg, #3E3E3E 11.14%, #7E7E7E 46%, #3E3E3E 80.87%)",
-                          }}
-                        >
-                          <button
-                            className="bg-black py-1 sm:py-2 text-xs sm:text-sm rounded-full transition-colors duration-300 flex justify-center items-center whitespace-nowrap text-[#FF5B19] px-2 sm:px-3 gap-1 hover:bg-black hover:text-primary"
-                            onClick={() => setSelectedAmount(amount)}
-                          >
-                            <Crown className="text-primary" size={20} />
-                            {amount}
-                          </button>
-                        </div>
-                      ) : (
-                        // Regular buttons
-                        <div
-                          className="p-[0.5px] md:p-[1px] justify-center items-center text-center rounded-full"
-                          style={{
-                            background:
-                              "linear-gradient(59.67deg, #3E3E3E 11.14%, #7E7E7E 46%, #3E3E3E 80.87%)",
-                          }}
-                        >
-                          <button
-                            className="bg-black py-1 sm:py-2 text-xs sm:text-sm rounded-full transition-colors duration-300 flex justify-center items-center whitespace-nowrap px-2 sm:px-4 text-gray-400 hover:bg-gray-900/70"
-                            onClick={() => setSelectedAmount(amount)}
-                          >
-                            {amount}
-                          </button>
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Pricing Card */}
-              <div
-                className="p-[2px] rounded-4xl"
-                style={{
-                  background:
-                    "linear-gradient(42.8deg, #3E3E3E 28.97%, #FF3500 52.6%, #3E3E3E 76.22%)",
-                }}
-              >
-                <div className="rounded-4xl relative overflow-hidden bg-gradient-to-r from-black to bg-primary">
-                  {/* Background Blur Effect */}
-                  <div className="w-64 h-64 sm:w-96 sm:h-96 overflow-hidden left-[200px] sm:left-[369px] top-[250px] sm:top-[351px] absolute bg-zinc-400 rounded-full blur-[250px] sm:blur-[217.70px] z-0 pointer-events-none"></div>
-
-                  {/* Card Content */}
-                  <div className="bg-black p-4 sm:p-6 rounded-br-4xl">
-                    {/* Step Selection */}
-                    <div className="flex justify-center space-x-2 sm:space-x-4 my-4 pb-4">
-                      <button
-                        className="px-3 sm:px-6 py-2 text-xs sm:text-sm rounded-lg bg-primary text-white transition-colors duration-300"
-                        onClick={() => setSelectedStep("Basic Bot")}
-                      >
-                        Basic Bot
-                      </button>
-                      <div
-                        className="rounded-lg p-[1px]"
-                        style={{
-                          background:
-                            "linear-gradient(150.38deg, #3E3E3E 11.4%, #FF3500 41.19%, #3E3E3E 73.98%)",
-                        }}
-                      >
-                        <button
-                          className="w-full bg-black text-gray-400 px-3 sm:px-6 py-2 text-xs sm:text-sm rounded-lg hover:bg-gray-900/70 transition-colors duration-300"
-                          onClick={() => setSelectedStep("Advanced Bot")}
-                        >
-                          Advanced Bot
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Header */}
-                    <div className="flex justify-between items-start px-2 sm:px-4 mb-4 sm:mb-6">
-                      <h2 className="text-2xl sm:text-4xl ">
-                        {selectedAmount}
-                      </h2>
-                      <div className="text-right">
-                        <p className="text-xs sm:text-sm text-primary font-semibold">
-                          {selectedStep}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Details */}
-                    <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 pl-2 sm:pl-4">
-                      <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
-                        <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
-                          <span className="text-xs sm:text-sm">
-                            Trading Capital
-                          </span>
-                        </div>
-                        <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
-                        <div className="text-white font-semibold text-xs sm:text-sm">
-                          $5K
-                        </div>
-                      </div>
-
-                      <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
-                        <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
-                          <span className="text-xs sm:text-sm">
-                            Profit Share
-                          </span>
-                        </div>
-                        <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
-                        <div className="text-white font-semibold text-xs sm:text-sm">
-                          80%
-                        </div>
-                      </div>
-
-                      <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
-                        <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
-                          <span className="text-xs sm:text-sm">
-                            Monthly Target
-                          </span>
-                        </div>
-                        <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
-                        <div className="text-white font-semibold text-xs sm:text-sm">
-                          10% ($500)
-                        </div>
-                      </div>
-
-                      <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
-                        <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
-                          <span className="text-xs sm:text-sm">
-                            Risk Per Trade
-                          </span>
-                        </div>
-                        <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
-                        <div className="text-white font-semibold text-xs sm:text-sm">
-                          3% ($150)
-                        </div>
-                      </div>
-
-                      <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
-                        <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
-                          <span className="text-xs sm:text-sm">
-                            Max. Drawdown
-                          </span>
-                        </div>
-                        <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
-                        <div className="text-white font-semibold text-xs sm:text-sm">
-                          6% ($300)
-                        </div>
-                      </div>
-
-                      <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
-                        <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
-                          <span className="text-xs sm:text-sm">
-                            Forex Pairs
-                          </span>
-                        </div>
-                        <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
-                        <div className="text-white font-semibold text-xs sm:text-sm">
-                          28+ Major/Minor
-                        </div>
-                      </div>
-
-                      <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
-                        <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
-                          <span className="text-xs sm:text-sm">
-                            Trading Hours
-                          </span>
-                        </div>
-                        <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
-                        <div className="text-white font-semibold text-xs sm:text-sm">
-                          24/5 Automated
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Purchase Section */}
-                  <div className="bg-gradient-to-r rounded-tl-4xl from-primary to-primary p-3 sm:p-4 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
-                    <div className="ml-0 sm:ml-4 text-center sm:text-left">
-                      <p className="text-xs sm:text-sm text-white/80">
-                        Algorithm License
-                      </p>
-                      <p className="text-xl sm:text-3xl font-bold text-white">
-                        $70.00
-                      </p>
-                    </div>
-                    <button className="bg-black z-10 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl flex items-center font-semibold hover:bg-white hover:text-black transition-colors text-sm sm:text-base w-full sm:w-auto justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-plus mr-2 mb-0.5 sm:mr-2"
-                        aria-hidden="true"
-                      >
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5v14"></path>
-                      </svg>
-                      Deploy Trading Bot
-                    </button>
-                  </div>
-                </div>
-              </div>
+          <div className="w-full mb-16 max-w-6xl mx-auto text-white">
+            {/* Header */}
+            <div className="text-center mb-12">
+              <h1 className="text-2xl sm:text-4xl font-bold mb-4">
+                Pricing Plans
+              </h1>
+              <p className="text-gray-400 text-sm sm:text-base px-2 sm:px-0 max-w-2xl mx-auto">
+                We offer flexible plans for different needs
+              </p>
             </div>
 
-            {/* Footer Note */}
-            <p className="text-center text-xs text-gray-500 mt-4 px-2 sm:px-0">
-              Please click here for{" "}
-              <a
-                target="_blank"
-                href="/algorithm-rules"
-                className="underline hover:text-white"
-              >
-                Algorithm Guidelines
-              </a>{" "}
-              for detailed overview.
-            </p>
+            {/* Pricing Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {plans.map((plan, index) => (
+                <div
+                  key={index}
+                  className={`relative p-8 rounded-lg border ${
+                    plan.popular
+                      ? "border-primary bg-black/60 transform scale-105"
+                      : "border-white/10 bg-black/30"
+                  } hover:border-primary/50 transition-all duration-300`}
+                >
+                  {plan.popular && (
+                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                      <span className="bg-primary px-4 py-1 rounded-full text-sm font-medium">
+                        Most Popular
+                      </span>
+                    </div>
+                  )}
+
+                  <div className="text-center mb-8">
+                    <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
+                    <p className="text-neutral-400 text-sm mb-4">
+                      {plan.description}
+                    </p>
+                    <div className="text-2xl font-bold text-primary">
+                      {plan.price}
+                    </div>
+                  </div>
+
+                  <ul className="space-y-3 mb-8 min-h-[240px]">
+                    {plan.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center">
+                        <Check className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
+                        <span className="text-neutral-300 text-sm">
+                          {feature}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <button
+                    className={`w-full py-3 px-6 rounded-lg font-medium transition-colors ${
+                      plan.popular
+                        ? "bg-primary text-white hover:bg-primary/90"
+                        : "border border-white/20 text-white hover:bg-white/10"
+                    }`}
+                  >
+                    Get Started
+                  </button>
+                </div>
+              ))}
+            </div>
+
+            {/* How It Works Section */}
+            <div className="mt-20 text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-8">
+                How It Works
+              </h2>
+              <p className="text-lg text-neutral-400 mb-12">
+                Simple 4-Step Process
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {[
+                  {
+                    number: "1",
+                    title: "Consultation & Strategy Discussion",
+                    description: "Share your trading goals.",
+                  },
+                  {
+                    number: "2",
+                    title: "Bot Development / Selection",
+                    description:
+                      "Choose from our ready-made bots or request a custom build.",
+                  },
+                  {
+                    number: "3",
+                    title: "Testing & Optimization",
+                    description: "Backtest + demo testing before live use.",
+                  },
+                  {
+                    number: "4",
+                    title: "Deployment & Support",
+                    description: "Go live with 24/7 support and monitoring.",
+                  },
+                ].map((step, index) => (
+                  <div key={index} className="text-center">
+                    <div className="w-16 h-16 mx-auto mb-6 bg-primary rounded-full flex items-center justify-center text-2xl font-bold">
+                      {step.number}
+                    </div>
+                    <h3 className="text-lg font-semibold mb-4">{step.title}</h3>
+                    <p className="text-neutral-400 text-sm">
+                      {step.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

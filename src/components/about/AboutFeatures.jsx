@@ -10,7 +10,7 @@ const AboutFeatures = () => {
     {
       title: "Zero-Code Trading Setup",
       description:
-        "Deploy sophisticated forex strategies without programming knowledge - just configure and launch",
+        "Start sophisticated forex strategies without programming knowledge - just configure and launch",
     },
     {
       title: "Multi-Timeframe Backtesting",

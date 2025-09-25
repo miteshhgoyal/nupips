@@ -3,33 +3,33 @@ import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
 const FAQSection = () => {
-  const [openFAQ, setOpenFAQ] = useState(2); // Third FAQ is open by default
+  const [openFAQ, setOpenFAQ] = useState(2);
 
   const faqs = [
     {
-      question: "How do the forex algorithms work?",
+      question: "How do Nupips algorithmic trading bots work?",
       answer:
-        "Our AI-powered algorithms analyze multiple timeframes, currency correlations, and market sentiment in real-time. They execute trades based on proven strategies backtested on 20+ years of forex data, automatically managing entries, exits, and risk parameters.",
+        "Our AI-powered algorithms analyze multiple timeframes, market correlations, and sentiment in real-time. They execute trades based on proven strategies backtested on years of historical data, automatically managing entries, exits, and risk parameters across Forex, Crypto, Stocks, and Commodities.",
     },
     {
       question: "Can I customize the trading algorithms?",
       answer:
-        "Yes! You can adjust risk levels, select specific currency pairs (majors, minors, exotics), set maximum drawdown limits, and choose trading sessions (London, New York, Tokyo, Sydney). Our platform offers pre-configured strategies or full customization.",
+        "Yes! You can adjust risk levels, select specific assets and markets, set maximum drawdown limits, and choose trading sessions. Our platform offers pre-configured strategies for beginners or full customization for advanced traders with API integrations.",
     },
     {
       question: "How quickly can I start automated trading?",
       answer:
-        "You can deploy your first forex algorithm within 15 minutes of account setup. Simply choose your strategy, set risk parameters, fund your account, and activate. The algorithms begin trading immediately during active market hours across all major currency pairs.",
+        "You can start your first algorithm within 15 minutes of consultation. Simply choose your strategy (custom or ready-made), set risk parameters, and activate. Our bots begin trading immediately during active market hours with 24/7 monitoring and support.",
     },
     {
-      question: "What happens during high-impact news events?",
+      question: "What platforms and brokers do you support?",
       answer:
-        "Our algorithms include news filtering and volatility protection. They can pause trading during major economic releases (NFP, FOMC, ECB), reduce position sizes during high volatility, or continue trading with tighter risk management based on your preferences.",
+        "We offer full compatibility with MT4, MT5, TradingView, Zerodha, Angel One, Binance, Bybit, and other global platforms. Our API integrations ensure seamless connectivity with your preferred broker for automated execution.",
     },
     {
-      question: "Do algorithms trade during all forex sessions?",
+      question: "How do you ensure security and transparency?",
       answer:
-        "Yes, our algorithms operate 24/5 across all major trading sessions - Tokyo (Asian), London (European), and New York (American). You can configure which sessions to trade based on your preferred currency pairs and risk tolerance, ensuring continuous market coverage.",
+        "We use enterprise-grade encryption and secure hosting for all trading operations. Our systems provide clear reports with no hidden logic, real-time performance tracking, and complete transparency in all algorithmic decisions and trade executions.",
     },
   ];
 
@@ -55,8 +55,8 @@ const FAQSection = () => {
               className="text-xl text-neutral-400 font-normal leading-relaxed max-w-3xl mx-auto"
               style={{ opacity: 1, transform: "none" }}
             >
-              New to forex algorithms or optimizing existing strategies? Our FAQ
-              covers everything about automated trading—from setup and
+              New to algorithmic trading or optimizing existing strategies? Our
+              FAQ covers everything about automated trading—from setup and
               customization to risk management and performance optimization.
             </p>
           </div>
