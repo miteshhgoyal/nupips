@@ -1,11 +1,14 @@
 import React from "react";
+import { MessageCircle } from "lucide-react"; // Add this import for the icon
 
 const ShimmerButton = ({
   children,
   variant = "default",
   size = "md",
   className = "",
+  href = "",
   onClick,
+  icon: Icon,
   ...props
 }) => {
   // Variant configurations
@@ -58,9 +61,10 @@ const ShimmerButton = ({
   };
 
   return (
-    <button
+    <a
+      href={href}
       style={buttonStyle}
-      className={`group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap ${currentVariant.borderColor} ${currentSize} text-white [background:var(--bg)] [border-radius:var(--radius)] dark:text-black transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px ${className}`}
+      className={`group relative z-0 flex cursor-pointer items-center justify-center gap-2 overflow-hidden whitespace-nowrap border ${currentVariant.borderColor} ${currentSize} text-white [background:var(--bg)] [border-radius:var(--radius)] dark:text-black transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px ${className}`}
       onClick={onClick}
       {...props}
     >
@@ -71,6 +75,9 @@ const ShimmerButton = ({
         </div>
       </div>
 
+      {/* Icon (if provided) */}
+      {Icon && <Icon size={18} />}
+
       {/* Button Content */}
       {children}
 
@@ -80,14 +87,14 @@ const ShimmerButton = ({
 
       {/* Corner Glows */}
       <div
-        className="pointer-events-none absolute transition-all duration-300 ease-in-out top-0 right-0 h-4 w-20 rounded-full  /60 blur-[14px] opacity-80 group-hover:opacity-100"
+        className="pointer-events-none absolute transition-all duration-300 ease-in-out top-0 right-0 h-4 w-20 rounded-full bg-white/60 blur-[14px] opacity-80 group-hover:opacity-100"
         style={{ transform: "translate(30%,-30%)" }}
       ></div>
       <div
-        className="pointer-events-none absolute transition-all duration-300 ease-in-out bottom-0 left-0 h-4 w-20 rounded-full  /60 blur-[14px] opacity-80 group-hover:opacity-100"
+        className="pointer-events-none absolute transition-all duration-300 ease-in-out bottom-0 left-0 h-4 w-20 rounded-full bg-white/60 blur-[14px] opacity-80 group-hover:opacity-100"
         style={{ transform: "translate(-30%,30%)" }}
       ></div>
-    </button>
+    </a>
   );
 };
 

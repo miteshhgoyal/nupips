@@ -15,7 +15,7 @@ export default function ClientLayout({ children }) {
 
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-black text-white">
         <BgEffect />
 
         <div className="relative z-50 bg-transparent">

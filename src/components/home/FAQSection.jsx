@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Plus, Minus, BookOpen } from "lucide-react";
-import ShimmerButton from "../ui/ShimmerButton";
+import { Plus, Minus } from "lucide-react";
 
 const FAQSection = () => {
   const [openFAQ, setOpenFAQ] = useState(2); // Third FAQ is open by default
@@ -49,7 +48,7 @@ const FAQSection = () => {
               style={{ opacity: 1, transform: "none" }}
             >
               Frequently Asked
-              <br className="sm:block hidden" />    
+              <br className="sm:block hidden" />
               <span className="text-neutral-400">Questions</span>
             </h2>
             <p
@@ -95,17 +94,6 @@ const FAQSection = () => {
                 )}
               </div>
             ))}
-          </div>
-
-          {/* CTA Button */}
-          <div className="flex justify-center">
-            <ShimmerButton
-              variant="gradient"
-              className="group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-white/10 px-6 py-3 text-white transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px"
-            >
-              <BookOpen className="w-6 mr-2 h-6 text-white transition-colors duration-300" />
-              Read more
-            </ShimmerButton>
           </div>
         </div>
       </div>
