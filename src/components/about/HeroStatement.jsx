@@ -8,7 +8,7 @@ const HeroStatement = () => {
           className="mb-10 text-3xl sm:text-5xl font-semibold leading-tight text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          When You Trade Smart,
+          When Algorithms Trade Smart,
           <br className="block sm:hidden" /> You Should
           <br />
           <span className="bg-gradient-to-r from-[#FF5B19] to-[#E63535] bg-clip-text text-transparent">
@@ -20,30 +20,30 @@ const HeroStatement = () => {
           className="mt-4 text-lg sm:text-xl text-[#B2B2B2] font-normal leading-relaxed text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          Strategy tested. Algorithms optimized.{" "}
+          Cutting-edge algorithms rigorously tested.{" "}
           <br className="block sm:hidden" />
-          Signals generated.
+          Real-time data analyzed.
           <br />
-          Then... precision execution.
+          Then... intelligent execution.
         </p>
 
         <p
           className="mt-4 text-lg sm:text-xl text-[#B2B2B2] font-normal leading-relaxed text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          No guesswork. No emotions. No manual errors.
+          No emotions. No manual errors. No missed opportunities.
           <br />
           That's why we built NuPips <br className="block sm:hidden" /> -
-          advanced algo trading for professionals.
+          democratizing algo trading for everyone.
           <br />
-          No complexity. No delays.
+          No complexity. No barriers.
         </p>
 
         <p
           className="mt-4 text-lg sm:text-xl text-[#B2B2B2] font-normal leading-relaxed text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          Just intelligent trading and automated profits.
+          Just data-driven decisions and automated success.
         </p>
       </div>
     </section>

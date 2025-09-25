@@ -3,20 +3,24 @@ import React from "react";
 const AboutFeatures = () => {
   const features = [
     {
-      title: "Fast Payouts",
-      description: "Every Friday, without delay",
+      title: "State-of-the-Art Algorithms",
+      description:
+        "Rigorously tested and optimized for International markets with data-driven insights",
     },
     {
-      title: "Clear Rules",
-      description: "No hidden fees or complicated conditions",
+      title: "User-Friendly Interface",
+      description:
+        "Intuitive design makes algorithmic trading accessible without technical complexity",
     },
     {
-      title: "High Splits",
-      description: "Keep up to 90% of your profits",
+      title: "Robust Backtesting",
+      description:
+        "Powerful tools to test strategies with historical data for optimal performance",
     },
     {
-      title: "MT5 Access",
-      description: "Professional tools and fast execution to support you",
+      title: "Real-Time Analytics",
+      description:
+        "Up-to-the-minute market data and insights to capture every opportunity",
     },
   ];
 
@@ -27,9 +31,9 @@ const AboutFeatures = () => {
           className="mb-12 sm:mb-20 text-2xl sm:text-3xl lg:text-5xl font-semibold leading-tight text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          At Funded Friday <br className="jsx-c24816384e5c8cd1" />
+          At NuPips <br className="jsx-c24816384e5c8cd1" />
           <span className="jsx-c24816384e5c8cd1 bg-gradient-to-r from-[#FF5B19] to-[#E63535] bg-clip-text text-transparent">
-            we keep it simple
+            we democratize algo trading
           </span>
         </h2>
 
@@ -75,46 +79,41 @@ const AboutFeatures = () => {
             <div className="jsx-c24816384e5c8cd1 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mx-auto w-full">
               <div className="jsx-c24816384e5c8cd1 flex flex-col items-center md:items-start text-center md:text-left w-full md:w-1/2">
                 <h2 className="jsx-c24816384e5c8cd1 text-2xl font-semibold mb-4">
-                  What's Behind <br className="jsx-c24816384e5c8cd1" />
+                  Our <br className="jsx-c24816384e5c8cd1" />
                   <span className="jsx-c24816384e5c8cd1 text-orange-500">
-                    the Name?
+                    Vision
                   </span>
                 </h2>
-                <h2 className="jsx-c24816384e5c8cd1 text-xl font-semibold">
-                  Because Friday is your payday
-                </h2>
                 <p className="jsx-c24816384e5c8cd1 text-[#B1B1B1] font-hehe text-sm md:text-base">
+                  To democratize algorithmic trading, making it accessible to
+                  both seasoned professionals and aspiring traders.
                   <br className="jsx-c24816384e5c8cd1" />
-                  A firm that rewards skill instead of punishing success.
                   <br className="jsx-c24816384e5c8cd1" />
-                  No waiting. No excuses.
-                  <br className="jsx-c24816384e5c8cd1" />
+                  Technology should level the playing field.
                 </p>
                 <p className="jsx-c24816384e5c8cd1 text-[#B1B1B1] mt-2 font-hehe text-sm md:text-base">
-                  Just the profits you earned,
+                  With our platform,
                   <br className="jsx-c24816384e5c8cd1" />
-                  paid out on time - every Friday.
+                  we aim to do just that.
                 </p>
               </div>
               <div className="jsx-c24816384e5c8cd1 flex flex-col items-center md:items-start text-center md:text-left w-full md:w-1/2">
                 <h2 className="jsx-c24816384e5c8cd1 text-2xl font-semibold mb-4">
-                  Our{" "}
+                  Risk Management{" "}
                   <span className="jsx-c24816384e5c8cd1 text-orange-500">
-                    Mission
+                    & Support
                   </span>
-                  <br className="jsx-c24816384e5c8cd1" />
-                  is Simple
                 </h2>
                 <p className="jsx-c24816384e5c8cd1 text-[#B1B1B1] font-hehe text-sm md:text-base">
-                  To give traders a firm they can rely on.
+                  Protect your capital with built-in risk management tools.
                   <br className="jsx-c24816384e5c8cd1" />
-                  A firm that rewards skill instead of punishing success.
+                  Set parameters to minimize losses and safeguard investments.
                   <br className="jsx-c24816384e5c8cd1" />
                 </p>
                 <p className="jsx-c24816384e5c8cd1 text-[#B1B1B1] mt-2 font-hehe text-sm md:text-base">
-                  Trading is hard enough.
+                  Our expert team provides dedicated support.
                   <br className="jsx-c24816384e5c8cd1" />
-                  Getting paid shouldn't be.
+                  Ready to help you maximize our platform.
                 </p>
               </div>
             </div>

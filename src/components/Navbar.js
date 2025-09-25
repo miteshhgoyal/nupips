@@ -9,8 +9,6 @@ const Navbar = () => {
     const navLinks = [
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About Us' },
-        { href: '/trading-rules', label: 'Trading Rules' },
-        { href: '/faq', label: 'FAQ' },
         { href: '/contact', label: 'Contact Us' }
     ];
 

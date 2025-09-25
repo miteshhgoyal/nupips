@@ -13,10 +13,10 @@ const Footer = () => {
     const usefulLinks = [
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About Us' },
-        { href: '/faq', label: 'FAQ' },
-        { href: '/trading-rules', label: 'Trading Rules' },
-        { href: '/affiliate', label: 'Affiliate Program' },
-        { href: '/blog', label: 'Blog' },
+
+
+
+
         { href: '/contact', label: 'Contact Us' }
     ];
 
@@ -27,8 +27,7 @@ const Footer = () => {
     ];
 
     const contactLinks = [
-        { href: 'mailto:support@Nupips.com', label: 'Email' },
-        { href: '#', label: 'Live Chat' },
+        { href: 'mailto:support@nupips.com', label: 'Email' },
         { href: '/contact', label: 'Connect With Us' }
     ];
 
