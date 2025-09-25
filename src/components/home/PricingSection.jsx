@@ -4,19 +4,19 @@ import { Crown } from "lucide-react";
 
 const PricingSection = () => {
   const [selectedAmount, setSelectedAmount] = useState("$5K");
-  const [selectedStep, setSelectedStep] = useState("One Step");
+  const [selectedStep, setSelectedStep] = useState("Basic Bot");
 
   // Pricing data for different amounts
   const pricingData = {
     $5K: {
-      oneStep: {
+      basicBot: {
         accountSize: "$5K",
         profitSplit: "80%",
         profitTarget: "10% ($500)",
         maxDailyLoss: "3% ($150)",
         maxDrawdown: "6% ($300)",
         leverage: "Up to 1:100",
-        platform: "MT5",
+        platform: "MT5 + Algo Dashboard",
         challengeFee: "$70.00",
       },
     },
@@ -34,11 +34,11 @@ const PricingSection = () => {
               {/* Header */}
               <div className="text-center mb-6 sm:mb-10">
                 <h1 className="text-2xl sm:text-4xl font-bold mb-2">
-                  Pick. Trade. Profit.
+                  Deploy. Trade. Profit.
                 </h1>
                 <p className="text-gray-400 text-sm sm:text-base px-2 sm:px-0">
-                  Get funded up to $200K with fast payouts and high profit
-                  splits.
+                  Launch forex algorithms with capital up to $200K. Automated
+                  trading with high profit splits.
                 </p>
               </div>
 
@@ -124,9 +124,9 @@ const PricingSection = () => {
                     <div className="flex justify-center space-x-2 sm:space-x-4 my-4 pb-4">
                       <button
                         className="px-3 sm:px-6 py-2 text-xs sm:text-sm rounded-lg bg-primary text-white transition-colors duration-300"
-                        onClick={() => setSelectedStep("One Step")}
+                        onClick={() => setSelectedStep("Basic Bot")}
                       >
-                        One Step
+                        Basic Bot
                       </button>
                       <div
                         className="rounded-lg p-[1px]"
@@ -137,9 +137,9 @@ const PricingSection = () => {
                       >
                         <button
                           className="w-full bg-black text-gray-400 px-3 sm:px-6 py-2 text-xs sm:text-sm rounded-lg hover:bg-gray-900/70 transition-colors duration-300"
-                          onClick={() => setSelectedStep("Two Step")}
+                          onClick={() => setSelectedStep("Advanced Bot")}
                         >
-                          Two Step
+                          Advanced Bot
                         </button>
                       </div>
                     </div>
@@ -161,7 +161,7 @@ const PricingSection = () => {
                       <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
                         <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
                           <span className="text-xs sm:text-sm">
-                            Account Size
+                            Trading Capital
                           </span>
                         </div>
                         <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
@@ -173,7 +173,7 @@ const PricingSection = () => {
                       <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
                         <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
                           <span className="text-xs sm:text-sm">
-                            Profit Split
+                            Profit Share
                           </span>
                         </div>
                         <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
@@ -185,7 +185,7 @@ const PricingSection = () => {
                       <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
                         <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
                           <span className="text-xs sm:text-sm">
-                            Profit Target
+                            Monthly Target
                           </span>
                         </div>
                         <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
@@ -197,7 +197,7 @@ const PricingSection = () => {
                       <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
                         <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
                           <span className="text-xs sm:text-sm">
-                            Max. Daily Loss
+                            Risk Per Trade
                           </span>
                         </div>
                         <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
@@ -220,21 +220,25 @@ const PricingSection = () => {
 
                       <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
                         <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
-                          <span className="text-xs sm:text-sm">Leverage</span>
+                          <span className="text-xs sm:text-sm">
+                            Forex Pairs
+                          </span>
                         </div>
                         <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
                         <div className="text-white font-semibold text-xs sm:text-sm">
-                          Up to 1:100
+                          28+ Major/Minor
                         </div>
                       </div>
 
                       <div className="my-4 flex flex-row items-center text-sm mb-1 relative">
                         <div className="flex items-center text-zinc-400 min-w-[140px] sm:min-w-[180px]">
-                          <span className="text-xs sm:text-sm">Platform</span>
+                          <span className="text-xs sm:text-sm">
+                            Trading Hours
+                          </span>
                         </div>
                         <div className="mx-1 sm:mx-2 text-gray-300 w-3">:</div>
                         <div className="text-white font-semibold text-xs sm:text-sm">
-                          MT5
+                          24/5 Automated
                         </div>
                       </div>
                     </div>
@@ -244,7 +248,7 @@ const PricingSection = () => {
                   <div className="bg-gradient-to-r rounded-tl-4xl from-primary to-primary p-3 sm:p-4 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
                     <div className="ml-0 sm:ml-4 text-center sm:text-left">
                       <p className="text-xs sm:text-sm text-white/80">
-                        Challenge Fee
+                        Algorithm License
                       </p>
                       <p className="text-xl sm:text-3xl font-bold text-white">
                         $70.00
@@ -267,7 +271,7 @@ const PricingSection = () => {
                         <path d="M5 12h14"></path>
                         <path d="M12 5v14"></path>
                       </svg>
-                      Buy the Challenge
+                      Deploy Trading Bot
                     </button>
                   </div>
                 </div>
@@ -279,10 +283,10 @@ const PricingSection = () => {
               Please click here for{" "}
               <a
                 target="_blank"
-                href="/trading-rules"
+                href="/algorithm-rules"
                 className="underline hover:text-white"
               >
-                Trading Rules
+                Algorithm Guidelines
               </a>{" "}
               for detailed overview.
             </p>

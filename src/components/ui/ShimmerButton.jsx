@@ -64,7 +64,7 @@ const ShimmerButton = ({
     <a
       href={href}
       style={buttonStyle}
-      className={`group relative z-0 flex cursor-pointer items-center justify-center gap-2 overflow-hidden whitespace-nowrap border ${currentVariant.borderColor} ${currentSize} text-white [background:var(--bg)] [border-radius:var(--radius)] dark:text-black transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px ${className}`}
+      className={`group relative z-0 flex cursor-pointer items-center justify-center gap-2 overflow-hidden whitespace-nowrap border ${currentVariant.borderColor} ${currentSize} text-white [background:var(--bg)] [border-radius:var(--radius)] transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px ${className}`}
       onClick={onClick}
       {...props}
     >
