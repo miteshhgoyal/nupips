@@ -10,7 +10,7 @@ const HeroSection = () => {
         <iframe
           src="https://www.unicorn.studio/embed/jYxrWzSRtsXNqZADHnVH"
           title="Unicorn Studio Background"
-          className="w-full h-full object-cover hidden sm:block"
+          className="w-full h-full object-cover"
           style={{
             position: "absolute",
             top: 0,
