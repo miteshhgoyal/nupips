@@ -15,10 +15,10 @@ export default function ClientLayout({ children }) {
 
   return (
     <>
-      <div className="bg-black text-white">
+      <div className="bg-black text-white overflow-x-hidden">
         <BgEffect />
 
-        <div className="relative z-50 bg-transparent">
+        <div className="relative z-50 bg-transparent overflow-x-hidden">
           {!hideLayout && <Navbar />}
           {children}
         </div>
