@@ -61,9 +61,9 @@ const Footer = () => {
 
     return (
         <footer
-            className="text-white py-12 md:py-20 px-4 sm:px-6 lg:px-8 bottom-0 left-0 right-0 sm:mt-48 mt-24"
+            className="relative z-50 text-white backdrop-blur-sm border-2 bg-black/40 border-gray-500/10  py-12 md:py-20 px-4 sm:px-6 lg:px-8 bottom-0 left-0 right-0 sm:mt-48 mt-24"
             style={{
-                background: "radial-gradient(220.08% 207.93% at -70.37% -88.58%, rgb(68, 68, 68) 0%, rgb(0, 0, 0) 100%)",
+
                 zIndex: 20,
                 opacity: 1,
                 transform: 'none'
@@ -71,7 +71,6 @@ const Footer = () => {
         >
             <div className="flex max-w-6xl mx-auto">
                 <div className="flex px-4 sm:px-0 sm:flex-row flex-col w-full">
-
                     {/* Left Section - Logo, CTA, Buttons */}
                     <div className="w-[100%] sm:w-[60%]">
                         <div className="space-y-5">
