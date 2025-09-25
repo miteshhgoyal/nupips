@@ -8,11 +8,11 @@ const HeroStatement = () => {
           className="mb-10 text-3xl sm:text-5xl font-semibold leading-tight text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          When Algorithms Trade Smart,
-          <br className="block sm:hidden" /> You Should
+          When Forex Markets Never Sleep,
+          <br className="block sm:hidden" /> Your Algorithms Should
           <br />
           <span className="bg-gradient-to-r from-[#FF5B19] to-[#E63535] bg-clip-text text-transparent">
-            Profit Consistently.
+            Trade Relentlessly.
           </span>
         </h2>
 
@@ -20,30 +20,30 @@ const HeroStatement = () => {
           className="mt-4 text-lg sm:text-xl text-[#B2B2B2] font-normal leading-relaxed text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          Cutting-edge algorithms rigorously tested.{" "}
+          AI-powered forex algorithms trained on millions of trades.{" "}
           <br className="block sm:hidden" />
-          Real-time data analyzed.
+          Market sentiment analyzed in milliseconds.
           <br />
-          Then... intelligent execution.
+          Then... precision execution across all currency pairs.
         </p>
 
         <p
           className="mt-4 text-lg sm:text-xl text-[#B2B2B2] font-normal leading-relaxed text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          No emotions. No manual errors. No missed opportunities.
+          No FOMO. No revenge trading. No missed London or New York sessions.
           <br />
           That's why we built NuPips <br className="block sm:hidden" /> -
-          democratizing algo trading for everyone.
+          bringing institutional-grade forex algorithms to retail traders.
           <br />
-          No complexity. No barriers.
+          No coding required. No barriers to entry.
         </p>
 
         <p
           className="mt-4 text-lg sm:text-xl text-[#B2B2B2] font-normal leading-relaxed text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          Just data-driven decisions and automated success.
+          Just smart algorithms capturing pips while you sleep.
         </p>
       </div>
     </section>

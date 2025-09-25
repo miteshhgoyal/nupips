@@ -3,24 +3,24 @@ import React from "react";
 const AboutFeatures = () => {
   const features = [
     {
-      title: "State-of-the-Art Algorithms",
+      title: "Advanced Forex Algorithms",
       description:
-        "Rigorously tested and optimized for International markets with data-driven insights",
+        "AI-powered trading systems trained on 20+ years of forex market data across all major currency pairs",
     },
     {
-      title: "User-Friendly Interface",
+      title: "Zero-Code Trading Setup",
       description:
-        "Intuitive design makes algorithmic trading accessible without technical complexity",
+        "Deploy sophisticated forex strategies without programming knowledge - just configure and launch",
     },
     {
-      title: "Robust Backtesting",
+      title: "Multi-Timeframe Backtesting",
       description:
-        "Powerful tools to test strategies with historical data for optimal performance",
+        "Test strategies across M1 to D1 timeframes with tick-level precision using historical forex data",
     },
     {
-      title: "Real-Time Analytics",
+      title: "Live Market Analytics",
       description:
-        "Up-to-the-minute market data and insights to capture every opportunity",
+        "Real-time currency strength meters, volatility indicators, and sentiment analysis for optimal entries",
     },
   ];
 
@@ -33,7 +33,7 @@ const AboutFeatures = () => {
         >
           At NuPips <br className="jsx-c24816384e5c8cd1" />
           <span className="jsx-c24816384e5c8cd1 bg-gradient-to-r from-[#FF5B19] to-[#E63535] bg-clip-text text-transparent">
-            we democratize algo trading
+            we revolutionize forex trading
           </span>
         </h2>
 
@@ -81,39 +81,41 @@ const AboutFeatures = () => {
                 <h2 className="jsx-c24816384e5c8cd1 text-2xl font-semibold mb-4">
                   Our <br className="jsx-c24816384e5c8cd1" />
                   <span className="jsx-c24816384e5c8cd1 text-orange-500">
-                    Vision
+                    Mission
                   </span>
                 </h2>
                 <p className="jsx-c24816384e5c8cd1 text-[#B1B1B1] font-hehe text-sm md:text-base">
-                  To democratize algorithmic trading, making it accessible to
-                  both seasoned professionals and aspiring traders.
+                  To democratize professional-grade forex trading algorithms,
+                  making institutional-level strategies accessible to retail
+                  traders worldwide.
                   <br className="jsx-c24816384e5c8cd1" />
                   <br className="jsx-c24816384e5c8cd1" />
-                  Technology should level the playing field.
+                  Every trader deserves access to cutting-edge technology.
                 </p>
                 <p className="jsx-c24816384e5c8cd1 text-[#B1B1B1] mt-2 font-hehe text-sm md:text-base">
                   With our platform,
                   <br className="jsx-c24816384e5c8cd1" />
-                  we aim to do just that.
+                  we bridge that gap completely.
                 </p>
               </div>
               <div className="jsx-c24816384e5c8cd1 flex flex-col items-center md:items-start text-center md:text-left w-full md:w-1/2">
                 <h2 className="jsx-c24816384e5c8cd1 text-2xl font-semibold mb-4">
-                  Risk Management{" "}
+                  Smart Risk Management{" "}
                   <span className="jsx-c24816384e5c8cd1 text-orange-500">
-                    & Support
+                    & 24/7 Support
                   </span>
                 </h2>
                 <p className="jsx-c24816384e5c8cd1 text-[#B1B1B1] font-hehe text-sm md:text-base">
-                  Protect your capital with built-in risk management tools.
+                  Advanced position sizing, dynamic stop-losses, and correlation
+                  filters protect your forex capital automatically.
                   <br className="jsx-c24816384e5c8cd1" />
-                  Set parameters to minimize losses and safeguard investments.
+                  Set maximum drawdown limits and risk per trade.
                   <br className="jsx-c24816384e5c8cd1" />
                 </p>
                 <p className="jsx-c24816384e5c8cd1 text-[#B1B1B1] mt-2 font-hehe text-sm md:text-base">
-                  Our expert team provides dedicated support.
+                  Our forex trading specialists provide round-the-clock support.
                   <br className="jsx-c24816384e5c8cd1" />
-                  Ready to help you maximize our platform.
+                  Ready to optimize your algorithmic performance.
                 </p>
               </div>
             </div>

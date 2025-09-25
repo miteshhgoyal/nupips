@@ -7,9 +7,9 @@ const page = () => {
     return (
         <div>
             <Hero
-                title="Funding Fast. <br/> Answers Faster."
-                subtitle="Questions about your account or the challenge? <br/>Just ask — we've got you."
-                button={{ href: "", text: "Chat With Us" }}
+                title="Trading Questions? <br/> Expert Answers Instantly."
+                subtitle="Stuck with your forex bot setup, risk management, or profit targets? <br/>Connect with our algorithmic trading specialists right now."
+                button={{ href: "", text: "Talk to Trading Experts" }}
             />
             <CTA />
             <FAQSection />

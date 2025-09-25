@@ -41,13 +41,14 @@ const HeroSection = () => {
           >
             {/* First headline - exact match */}
             <h1 className="text-[30px] text-[#AFAFAF] sm:text-5xl lg:text-6xl leading-tight">
-              Trusted by Thousands.
+              Trusted by Pro Traders.
             </h1>
 
             {/* Second headline - exact match */}
             <h1 className="text-[30px] sm:text-5xl lg:text-6xl font-bold leading-tight -mt-2 sm:-mt-4 mb-4 text-white">
-              Rated <span className="font-bold text-primary">#1 Prop-firm</span>{" "}
-              in India.
+              Rated{" "}
+              <span className="font-bold text-primary">#1 Algo Platform</span>{" "}
+              for Forex.
             </h1>
 
             {/* Paragraph - exact match */}
@@ -58,8 +59,8 @@ const HeroSection = () => {
                   "3px 3px 6px rgba(0, 0, 0, 1), 0 0 12px rgba(0, 0, 0, 0.7), 1px 1px 0px rgba(0, 0, 0, 0.9)",
               }}
             >
-              <span className="font-bold">Up to $200K funding.</span>
-              <br /> Get paid every Friday. No hidden rules - just results.
+              <span className="font-bold">24/7 automated trading.</span>
+              <br /> Earn pips while you sleep. No emotions - just algorithms.
             </p>
 
             {/* Buttons container - exact match */}
@@ -72,7 +73,7 @@ const HeroSection = () => {
                     className="group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-white/10 px-6 py-3 text-white transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px"
                   >
                     <TrendingUp className="w-6 mr-2 h-6 text-white transition-colors duration-300" />
-                    Buy Challenge
+                    Start Trading Bot
                   </ShimmerButton>
                 </div>
 

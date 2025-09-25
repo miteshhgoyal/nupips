@@ -7,29 +7,29 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "How does the evaluation work?",
+      question: "How do the forex algorithms work?",
       answer:
-        "Our evaluation process consists of a trading challenge where you need to demonstrate consistent profitability while following our risk management rules. You'll trade in a simulated environment that mirrors real market conditions.",
+        "Our AI-powered algorithms analyze multiple timeframes, currency correlations, and market sentiment in real-time. They execute trades based on proven strategies backtested on 20+ years of forex data, automatically managing entries, exits, and risk parameters.",
     },
     {
-      question: "What happens after I pass the evaluation?",
+      question: "Can I customize the trading algorithms?",
       answer:
-        "Once you successfully complete the evaluation, you'll receive access to a funded trading account where you can trade with our capital and keep a significant portion of the profits you generate.",
+        "Yes! You can adjust risk levels, select specific currency pairs (majors, minors, exotics), set maximum drawdown limits, and choose trading sessions (London, New York, Tokyo, Sydney). Our platform offers pre-configured strategies or full customization.",
     },
     {
-      question: "When can I request my first payout?",
+      question: "How quickly can I start automated trading?",
       answer:
-        "You can request your first payout seven calendar days after placing your first trade on the funded account, provided you've made profit for at least three separate days. After that, you're eligible for weekly payouts every Friday, as long as you continue to follow all risk rules.",
+        "You can deploy your first forex algorithm within 15 minutes of account setup. Simply choose your strategy, set risk parameters, fund your account, and activate. The algorithms begin trading immediately during active market hours across all major currency pairs.",
     },
     {
-      question: "What withdrawal options are available if I paid via UPI?",
+      question: "What happens during high-impact news events?",
       answer:
-        "We support multiple withdrawal methods including bank transfers, UPI, and cryptocurrency options. The method you choose for withdrawal doesn't need to match your payment method.",
+        "Our algorithms include news filtering and volatility protection. They can pause trading during major economic releases (NFP, FOMC, ECB), reduce position sizes during high volatility, or continue trading with tighter risk management based on your preferences.",
     },
     {
-      question: "Can I hold trades over the weekend?",
+      question: "Do algorithms trade during all forex sessions?",
       answer:
-        "Yes, you can hold positions over the weekend. However, be aware that weekend gaps and Monday opening prices may affect your positions due to news events that occur when markets are closed.",
+        "Yes, our algorithms operate 24/5 across all major trading sessions - Tokyo (Asian), London (European), and New York (American). You can configure which sessions to trade based on your preferred currency pairs and risk tolerance, ensuring continuous market coverage.",
     },
   ];
 
@@ -47,7 +47,7 @@ const FAQSection = () => {
               className="text-2xl sm:text-5xl font-semibold leading-tight"
               style={{ opacity: 1, transform: "none" }}
             >
-              Frequently Asked
+              Algorithmic Trading
               <br className="sm:block hidden" />
               <span className="text-neutral-400">Questions</span>
             </h2>
@@ -55,9 +55,9 @@ const FAQSection = () => {
               className="text-xl text-neutral-400 font-normal leading-relaxed max-w-3xl mx-auto"
               style={{ opacity: 1, transform: "none" }}
             >
-              Whether you're new to prop trading or already managing funded
-              capital, our FAQ covers everything you need to know—rules,
-              payouts, news and more.
+              New to forex algorithms or optimizing existing strategies? Our FAQ
+              covers everything about automated trading—from setup and
+              customization to risk management and performance optimization.
             </p>
           </div>
 

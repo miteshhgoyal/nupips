@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  MessageCircle,
-  Search,
-  Mail,
-  Instagram,
-  Facebook,
-  Youtube,
-} from "lucide-react";
+import { Instagram, Facebook, Youtube } from "lucide-react";
 import ShimmerButton from "../ui/ShimmerButton";
 
 const CTA = () => {
@@ -235,7 +228,7 @@ const CTA = () => {
             <div className="flex pb-6 space-x-3">
               {/* Twitter/X */}
               <a
-                href="https://x.com/"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ "--theme-color": "#000000" }}
@@ -257,7 +250,7 @@ const CTA = () => {
 
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/funded_friday/"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -271,7 +264,7 @@ const CTA = () => {
 
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ "--theme-color": "#1877F2" }}
@@ -282,7 +275,7 @@ const CTA = () => {
 
               {/* YouTube */}
               <a
-                href="https://www.youtube.com/"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ "--theme-color": "#FF0000" }}
