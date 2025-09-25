@@ -3,7 +3,7 @@ import React from "react";
 const HeroStatement = () => {
   return (
     <section className="text-white px-4 sm:px-0 py-10 sm:py-16 overflow-hidden relative flex items-center justify-center">
-      <div className="max-w-4xl w-full flex flex-col items-center justify-center mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div className="max-w-5xl w-full flex flex-col items-center justify-center mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <h2
           className="mb-10 text-3xl sm:text-5xl font-semibold leading-tight text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
