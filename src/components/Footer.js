@@ -75,13 +75,9 @@ const Footer = () => {
                     {/* Left Section - Logo, CTA, Buttons */}
                     <div className="w-[100%] sm:w-[60%]">
                         <div className="space-y-5">
-                            <img
-                                alt="Nupips Logo"
-                                width="200"
-                                height="200"
-                                className="h-8 sm:h-12 w-auto"
-                                src="https://Nupips-assets.s3.eu-north-1.amazonaws.com/public/logo.png"
-                            />
+                            <h3 className="text-xl sm:text-3xl font-semibold text-primary leading-tight">
+                                Nupips
+                            </h3>
 
                             <h3 className="text-xl my-6 sm:my-10 sm:text-3xl font-semibold text-white leading-tight">
                                 Start Automated Trading Today!

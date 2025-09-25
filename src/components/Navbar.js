@@ -27,11 +27,9 @@ const Navbar = () => {
             >
                 {/* Logo */}
                 <a href="/" className="relative flex items-center space-x-2 z-[60] flex-shrink-0">
-                    <img
-                        src="https://Nupips-assets.s3.eu-north-1.amazonaws.com/public/logo.png"
-                        alt="Nupips Logo"
-                        className="h-8 lg:h-10 w-auto"
-                    />
+                    <h3 className="text-xl sm:text-3xl font-semibold text-primary leading-tight">
+                        Nupips
+                    </h3>
                 </a>
 
                 {/* Navigation Links - Centered */}
@@ -82,11 +80,9 @@ const Navbar = () => {
                 {/* Mobile Header */}
                 <div className="flex w-full items-center justify-between px-4 py-3">
                     <a href="/" className="relative flex items-center space-x-2 z-[60]">
-                        <img
-                            src="https://Nupips-assets.s3.eu-north-1.amazonaws.com/public/logo.png"
-                            alt="Nupips Logo"
-                            className="h-7 sm:h-8 w-auto"
-                        />
+                        <h3 className="text-xl sm:text-3xl font-semibold text-primary leading-tight">
+                            Nupips
+                        </h3>
                     </a>
 
                     <div className='flex items-center gap-1'>

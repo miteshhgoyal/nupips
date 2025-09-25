@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { Crown } from "lucide-react";
 
 const PricingSection = () => {
   const [selectedAmount, setSelectedAmount] = useState("$5K");
@@ -79,11 +80,7 @@ const PricingSection = () => {
                             className="bg-black py-1 sm:py-2 text-xs sm:text-sm rounded-full transition-colors duration-300 flex justify-center items-center whitespace-nowrap text-[#FF5B19] px-2 sm:px-3 gap-1 hover:bg-black hover:text-primary"
                             onClick={() => setSelectedAmount(amount)}
                           >
-                            <img
-                              src="https://Nupips-assets.s3.eu-north-1.amazonaws.com/public/best-seller-o.svg"
-                              alt="100k"
-                              className="flex-shrink-0 w-3 h-3 sm:w-6 sm:h-6"
-                            />
+                            <Crown className="text-primary" size={20} />
                             {amount}
                           </button>
                         </div>
