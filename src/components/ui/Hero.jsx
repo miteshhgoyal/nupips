@@ -26,10 +26,10 @@ const Hero = ({
             className="text-center mb-20 sm:mb-16 relative z-10 max-w-4xl"
             style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
           >
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold mb-5 text-white">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold mb-5 -black">
               {renderTextWithBreaks(title)}
             </h1>
-            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-neutral-500 max-w-2xl mx-auto leading-relaxed">
               {renderTextWithBreaks(subtitle)}
             </p>
           </div>
@@ -43,7 +43,7 @@ const Hero = ({
               <ShimmerButton
                 href={button.href}
                 variant="gradient"
-                className="group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-white/10 px-6 py-3 text-white transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px"
+                className="group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-black/10 px-6 py-3 -black transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px"
               >
                 {button.text}
               </ShimmerButton>

@@ -16,22 +16,22 @@ const ShimmerButton = ({
     default: {
       bg: "linear-gradient(to right, #3B82F6, #1E40AF)",
       shimmerColor: "#60A5FA",
-      borderColor: "border-white/10",
+      borderColor: "border-black/10",
     },
     gradient: {
       bg: "linear-gradient(to right, #FF5B19, #B12424)",
       shimmerColor: "#FF5B19",
-      borderColor: "border-white/10",
+      borderColor: "border-black/10",
     },
     success: {
       bg: "linear-gradient(to right, #10B981, #059669)",
       shimmerColor: "#34D399",
-      borderColor: "border-white/10",
+      borderColor: "border-black/10",
     },
     purple: {
       bg: "linear-gradient(to right, #8B5CF6, #7C3AED)",
       shimmerColor: "#A78BFA",
-      borderColor: "border-white/10",
+      borderColor: "border-black/10",
     },
     gold: {
       bg: "linear-gradient(to right, #F59E0B, #D97706)",
@@ -64,7 +64,7 @@ const ShimmerButton = ({
     <a
       href={href}
       style={buttonStyle}
-      className={`group relative z-0 flex cursor-pointer items-center justify-center font-medium gap-2 overflow-hidden whitespace-nowrap border ${currentVariant.borderColor} ${currentSize} text-white [background:var(--bg)] [border-radius:var(--radius)] transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px ${className}`}
+      className={`group relative z-0 text-white flex cursor-pointer items-center justify-center font-medium gap-2 overflow-hidden whitespace-nowrap border ${currentVariant.borderColor} ${currentSize} -black [background:var(--bg)] [border-radius:var(--radius)] transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px ${className}`}
       onClick={onClick}
       {...props}
     >

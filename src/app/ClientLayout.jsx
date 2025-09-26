@@ -15,7 +15,7 @@ export default function ClientLayout({ children }) {
 
   return (
     <>
-      <div className="bg-black text-white overflow-x-hidden">
+      <div className="bg-white -black overflow-x-hidden">
         <BgEffect />
 
         <div className="relative z-50 bg-transparent overflow-x-hidden">

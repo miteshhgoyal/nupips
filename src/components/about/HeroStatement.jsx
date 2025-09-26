@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroStatement = () => {
   return (
-    <section className="text-white px-4 sm:px-0 py-10 sm:py-16 overflow-hidden relative flex items-center justify-center">
+    <section className="-black px-4 sm:px-0 py-10 sm:py-16 overflow-hidden relative flex items-center justify-center">
       <div className="max-w-5xl w-full flex flex-col items-center justify-center mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <h2
           className="mb-10 text-3xl sm:text-5xl font-semibold leading-tight text-center"
@@ -17,7 +17,7 @@ const HeroStatement = () => {
         </h2>
 
         <p
-          className="mt-4 text-lg sm:text-xl text-[#B2B2B2] font-normal leading-relaxed text-center"
+          className="mt-4 text-lg sm:text-xl text-neutral-500 font-normal leading-relaxed text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
           AI-powered forex algorithms trained on millions of trades.{" "}
@@ -28,7 +28,7 @@ const HeroStatement = () => {
         </p>
 
         <p
-          className="mt-4 text-lg sm:text-xl text-[#B2B2B2] font-normal leading-relaxed text-center"
+          className="mt-4 text-lg sm:text-xl text-neutral-500 font-normal leading-relaxed text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
           No FOMO. No revenge trading. No missed London or New York sessions.
@@ -40,7 +40,7 @@ const HeroStatement = () => {
         </p>
 
         <p
-          className="mt-4 text-lg sm:text-xl text-[#B2B2B2] font-normal leading-relaxed text-center"
+          className="mt-4 text-lg sm:text-xl text-neutral-500 font-normal leading-relaxed text-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
           Just smart algorithms capturing pips while you sleep.

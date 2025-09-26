@@ -49,13 +49,13 @@ const FeaturesGrid = () => {
   ];
 
   return (
-    <section className="flex items-center justify-center py-16 sm:py-20 text-white">
+    <section className="flex items-center justify-center py-16 sm:py-20 -black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4">Our Solutions</h2>
-          <p className="text-lg text-neutral-400 max-w-3xl mx-auto">
+          <p className="text-lg text-neutral-500 max-w-3xl mx-auto">
             At Nupips, we provide a wide range of{" "}
-            <strong className="text-white">algorithmic trading services</strong>
+            <strong className="-black">algorithmic trading services</strong>
           </p>
         </div>
 
@@ -66,13 +66,13 @@ const FeaturesGrid = () => {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center text-center space-y-6 p-6 bg-black/30 rounded-lg border border-white/10 hover:border-primary/50 transition-colors"
+                className="flex flex-col items-center text-center space-y-6 p-6 bg-white/30 rounded-lg border border-black/10 hover:border-primary/50 transition-colors"
               >
                 <IconComponent className="w-16 h-16 text-primary" />
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
+                <h3 className="text-xl sm:text-2xl font-bold -black">
                   {solution.title}
                 </h3>
-                <p className="text-neutral-400 leading-relaxed text-base sm:text-lg">
+                <p className="text-neutral-500 leading-relaxed text-base sm:text-lg">
                   {solution.description}
                 </p>
               </div>
@@ -86,25 +86,25 @@ const FeaturesGrid = () => {
             Performance Case Studies
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="p-6 bg-black/30 rounded-lg border border-white/10">
+            <div className="p-6 bg-white/30 rounded-lg border border-black/10">
               <h3 className="text-xl font-semibold text-primary mb-4">
                 Gold Scalper Bot
               </h3>
-              <p className="text-neutral-300 mb-4">
+              <p className="text-neutral-500 mb-4">
                 Backtested over 3 years, delivering an{" "}
-                <strong className="text-white">
+                <strong className="-black">
                   average of 7–10% monthly returns
                 </strong>{" "}
                 with controlled risk.
               </p>
             </div>
-            <div className="p-6 bg-black/30 rounded-lg border border-white/10">
+            <div className="p-6 bg-white/30 rounded-lg border border-black/10">
               <h3 className="text-xl font-semibold text-primary mb-4">
                 Crypto Arbitrage Bot
               </h3>
-              <p className="text-neutral-300 mb-4">
+              <p className="text-neutral-500 mb-4">
                 Tested on Binance & Bybit, showing consistent{" "}
-                <strong className="text-white">
+                <strong className="-black">
                   low-risk profit margins of 2–4% monthly
                 </strong>
                 .

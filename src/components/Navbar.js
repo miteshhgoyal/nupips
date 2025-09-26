@@ -80,7 +80,7 @@ const Navbar = () => {
                     <div className='flex items-center gap-1'>
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="text-white p-2 hover:bg-white/10 rounded-lg transition-colors duration-200"
+                            className="-black p-2 hover:bg-white/10 rounded-lg transition-colors duration-200"
                             aria-label="Toggle menu"
                         >
                             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -96,7 +96,7 @@ const Navbar = () => {
                             <a
                                 key={index}
                                 href={link.href}
-                                className="block px-2 py-1 text-white hover:text-primary hover:bg-white/5 rounded-lg transition-all duration-200 font-medium"
+                                className="block px-2 py-1 -black hover:text-primary hover:bg-white/5 rounded-lg transition-all duration-200 font-medium"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 {link.label}

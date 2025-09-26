@@ -19,10 +19,10 @@ const ComparisonSection = () => {
       <tr className="transition-colors">
         <td className="px-2 py-3 sm:px-6 sm:py-4">
           <div className="flex items-center space-x-3 sm:space-x-8">
-            <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 bg-transparent border-[1px] border-[#B1B1B1] rounded-full text-xs sm:text-sm font-medium text-white flex-shrink-0">
+            <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 bg-transparent border-[1px] border-neutral-500 rounded-full text-xs sm:text-sm font-medium -black flex-shrink-0">
               {index + 1}
             </div>
-            <span className="text-white text-sm sm:text-base font-[400] leading-tight">
+            <span className="-black text-sm sm:text-base font-[400] leading-tight">
               {feature}
             </span>
           </div>
@@ -30,14 +30,14 @@ const ComparisonSection = () => {
         <td className="px-1 py-3 sm:px-4 sm:py-4 text-center">
           <div className="flex items-center justify-center">
             <div className="flex items-center justify-center w-4 h-4 sm:w-[1rem] sm:h-[1rem] bg-[#FF5B19] rounded-full">
-              <Check className="w-2.5 h-2.5 sm:w-[0.7rem] sm:h-[0.7rem] text-black" />
+              <Check className="w-2.5 h-2.5 sm:w-[0.7rem] sm:h-[0.7rem] -black" />
             </div>
           </div>
         </td>
         <td className="px-1 py-3 sm:px-4 sm:py-4 text-center">
           <div className="flex items-center justify-center">
-            <div className="flex items-center justify-center w-4 h-4 sm:w-[1rem] sm:h-[1rem] border border-white rounded-full bg-white">
-              <X className="w-2.5 h-2.5 sm:w-[0.7rem] sm:h-[0.7rem] text-black stroke-2" />
+            <div className="flex items-center justify-center w-4 h-4 sm:w-[1rem] sm:h-[1rem] border border-black rounded-full bg-white">
+              <X className="w-2.5 h-2.5 sm:w-[0.7rem] sm:h-[0.7rem] -black stroke-2" />
             </div>
           </div>
         </td>
@@ -54,16 +54,16 @@ const ComparisonSection = () => {
 
   return (
     <div className="flex items-center justify-center py-16 sm:py-20">
-      <div className="w-full flex flex-col items-center justify-center text-white mb-10">
+      <div className="w-full flex flex-col items-center justify-center -black mb-10">
         {/* Header */}
         <div
-          className="w-full sm:w-1/2 flex flex-col justify-center items-center text-white z-20 text-left sm:py-0 mb-2 sm:mb-10"
+          className="w-full sm:w-1/2 flex flex-col justify-center items-center -black z-20 text-left sm:py-0 mb-2 sm:mb-10"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
           <h2 className="text-2xl sm:text-5xl font-semibold text-center mb-5">
             Why Choose Nupips?
           </h2>
-          <p className="text-neutral-300 sm:px-0 px-6 max-w-xl mx-auto text-sm sm:text-lg text-center">
+          <p className="text-neutral-500 sm:px-0 px-6 max-w-xl mx-auto text-sm sm:text-lg text-center">
             We deliver what others miss - complete algorithmic trading
             solutions.
           </p>
@@ -86,7 +86,7 @@ const ComparisonSection = () => {
                     </span>
                   </th>
                   <th className="px-1 py-2 sm:px-4 sm:py-4 text-center">
-                    <span className="text-gray-400 font-[600] whitespace-nowrap text-xs sm:text-base">
+                    <span className="text-neutral-500 font-[600] whitespace-nowrap text-xs sm:text-base">
                       Others
                     </span>
                   </th>
@@ -112,7 +112,7 @@ const ComparisonSection = () => {
                     </span>
                   </th>
                   <th className="px-1 py-2 sm:px-4 sm:py-4 text-center">
-                    <span className="text-gray-400 font-[600] whitespace-nowrap text-xs sm:text-base">
+                    <span className="text-neutral-500 font-[600] whitespace-nowrap text-xs sm:text-base">
                       Others
                     </span>
                   </th>
@@ -143,7 +143,7 @@ const ComparisonSection = () => {
                     </span>
                   </th>
                   <th className="px-1 py-2 sm:px-4 sm:py-4 text-center">
-                    <span className="text-gray-400 font-[600] whitespace-nowrap text-xs sm:text-base">
+                    <span className="text-neutral-500 font-[600] whitespace-nowrap text-xs sm:text-base">
                       Others
                     </span>
                   </th>

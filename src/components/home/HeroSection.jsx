@@ -51,7 +51,7 @@ const HeroSection = () => {
 
             {/* Paragraph */}
             <p
-              className="text-base sm:text-lg text-balance text-white max-w-xl mx-auto mb-3 leading-relaxed"
+              className="text-base text-white sm:text-lg text-balance -black max-w-xl mx-auto mb-3 leading-relaxed"
               style={{
                 textShadow:
                   "3px 3px 6px rgba(0, 0, 0, 1), 0 0 12px rgba(0, 0, 0, 0.7), 1px 1px 0px rgba(0, 0, 0, 0.9)",
@@ -70,9 +70,9 @@ const HeroSection = () => {
                 <div style={{ pointerEvents: "auto" }}>
                   <ShimmerButton
                     variant="gradient"
-                    className="group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-white/10 px-6 py-3 text-white transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px"
+                    className="group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-black/10 px-6 py-3 -black transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px"
                   >
-                    <TrendingUp className="w-6 mr-2 h-6 text-white transition-colors duration-300" />
+                    <TrendingUp className="w-6 mr-2 h-6 -black transition-colors duration-300" />
                     Get Started
                   </ShimmerButton>
                 </div>
@@ -80,7 +80,7 @@ const HeroSection = () => {
                 <div style={{ pointerEvents: "auto" }}>
                   <a
                     href="/contact"
-                    className="block border border-white text-white px-6 py-3 rounded-[10px] bg-transparent hover:bg-white/10 transition-all duration-300 font-medium"
+                    className="block border border-white text-white  px-6 py-3 rounded-[10px] bg-transparent hover:bg-white/10 transition-all duration-300 font-medium"
                   >
                     Book a Demo
                   </a>

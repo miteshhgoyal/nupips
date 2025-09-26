@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import { StarIcon } from "lucide-react";
 
@@ -41,21 +41,21 @@ const TestimonialsSection = () => {
       <div className="max-w-[2000px] mx-auto flex flex-col items-center justify-center relative overflow-hidden space-y-16">
         {/* Container with backdrop */}
         <div
-          className="max-w-7xl mx-auto w-full items-center rounded-2xl px-4 py-16 backdrop-blur-sm border-2 bg-black/40 border-gray-500/10 justify-center"
+          className="max-w-7xl mx-auto w-full items-center rounded-2xl px-4 py-16 backdrop-blur-sm border-2 bg-white/40 border-gray-500/10 justify-center"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
           {/* Header */}
           <div
-            className="z-10 flex flex-col items-center px-4 sm:px-0 w-full text-white"
+            className="z-10 flex flex-col items-center px-4 sm:px-0 w-full -black"
             style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
           >
             <h2 className="text-2xl sm:text-5xl font-semibold text-center mb-5">
               Real algorithms deliver{" "}
-              <span className="text-neutral-400">
+              <span className="text-neutral-500">
                 <br /> Real profits
               </span>
             </h2>
-            <p className="text-neutral-300 sm:px-0 px-6 max-w-xl mx-auto text-sm sm:text-lg text-center mb-10">
+            <p className="text-neutral-500 sm:px-0 px-6 max-w-xl mx-auto text-sm sm:text-lg text-center mb-10">
               See what forex traders are saying about our AI-powered algorithms.
             </p>
           </div>
@@ -74,9 +74,9 @@ const TestimonialsSection = () => {
                         "linear-gradient(to bottom, #B12424, #FF5B19)",
                     }}
                   >
-                    <div className="bg-black rounded-2xl px-8 py-8 h-full flex flex-col justify-between">
+                    <div className="bg-white rounded-2xl px-8 py-8 h-full flex flex-col justify-between">
                       <blockquote>
-                        <div className="relative z-20 text-sm leading-[1.6] font-bold text-white">
+                        <div className="relative z-20 text-sm leading-[1.6] font-bold -black">
                           {testimonial.text}
                         </div>
                       </blockquote>
@@ -104,9 +104,9 @@ const TestimonialsSection = () => {
                         "linear-gradient(to bottom, #B12424, #FF5B19)",
                     }}
                   >
-                    <div className="bg-black rounded-2xl px-8 py-8 h-full flex flex-col justify-between">
+                    <div className="bg-white rounded-2xl px-8 py-8 h-full flex flex-col justify-between">
                       <blockquote>
-                        <div className="relative z-20 text-sm leading-[1.6] font-bold text-white">
+                        <div className="relative z-20 text-sm leading-[1.6] font-bold -black">
                           {testimonial.text}
                         </div>
                       </blockquote>

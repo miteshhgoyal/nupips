@@ -11,15 +11,8 @@ const CTA = () => {
           className="w-full sm:w-1/2"
           style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}
         >
-          <div className="p-[1px] bg-gradient-to-br from-[#B1B1B1] to-black hover:from-[#FF5B19] hover:via-[#E63535] rounded-2xl">
-            <div
-              className="flex flex-col items-start p-12 gap-8 sm:gap-16 rounded-2xl h-full"
-              style={{
-                background:
-                  "radial-gradient(133.78% 146.9% at -49.25% -72.79%, #B1B1B1 0%, #000000 100%)",
-                minHeight: "298px",
-              }}
-            >
+          <div className="p-[1px] bg-gradient-to-br from-neutral-300 to-white rounded-2xl">
+            <div className="flex flex-col items-start p-12 gap-8 sm:gap-16 rounded-2xl h-full">
               <div className="flex flex-row sm:flex-col gap-8 sm:gap-8 w-full h-full">
                 {/* Chat Section */}
                 <div className="flex flex-col sm:flex-row w-1/2 sm:w-full h-full">
@@ -62,10 +55,10 @@ const CTA = () => {
                       <div className="flex flex-col h-full justify-between">
                         <div>
                           <h2 className="text-xl sm:text-3xl font-hehe mb-2">
-                            Chat <span className="text-[#B1B1B1]">with us</span>
+                            Chat <span className="text-neutral-500">with us</span>
                           </h2>
                         </div>
-                        <div className="flex-1 text-[#B1B1B1] text-left font-light text-sm sm:text-lg mb-4 sm:mt-4 sm:mb-2 sm:h-12 flex flex-col justify-end sm:hidden min-h-[120px]">
+                        <div className="flex-1 text-neutral-500 text-left font-light text-sm sm:text-lg mb-4 sm:mt-4 sm:mb-2 sm:h-12 flex flex-col justify-end sm:hidden min-h-[120px]">
                           <div className="space-y-1">
                             <p>Available</p>
                             <p>Monday - Friday</p>
@@ -73,7 +66,7 @@ const CTA = () => {
                           </div>
                         </div>
                         <ShimmerButton
-                          className="group relative z-0 cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-white/10 px-6 py-3 text-white transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px sm:hidden block"
+                          className="group relative z-0 cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-black/10 px-6 py-3 -black transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px sm:hidden block"
                           style={{
                             "--spread": "90deg",
                             "--shimmer-color": "#FF5B19",
@@ -89,11 +82,11 @@ const CTA = () => {
                       </div>
                     </div>
                     <div className="hidden sm:flex flex-col items-start justify-start sm:ml-auto">
-                      <div className="sm:w-52 text-[#B1B1B1] text-left font-light text-lg mb-2 sm:h-12 flex flex-col justify-center">
+                      <div className="sm:w-52 text-neutral-500 text-left font-light text-lg mb-2 sm:h-12 flex flex-col justify-center">
                         <p>24/7 Support</p>
                       </div>
                       <ShimmerButton
-                        className="group relative z-0 cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-white/10 px-6 py-3 text-white transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px hidden sm:block"
+                        className="group relative z-0 cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-black/10 px-6 py-3 -black transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px hidden sm:block"
                         style={{
                           "--spread": "90deg",
                           "--shimmer-color": "#FF5B19",
@@ -142,10 +135,10 @@ const CTA = () => {
                       <div className="flex flex-col h-full justify-between">
                         <div>
                           <h2 className="text-xl sm:text-3xl font-hehe mb-2">
-                            Email <span className="text-[#B1B1B1]">us</span>
+                            Email <span className="text-neutral-500">us</span>
                           </h2>
                         </div>
-                        <div className="flex-1 w-full text-[#B1B1B1] text-left font-light text-sm sm:text-lg mb-4 sm:mt-4 sm:mb-2 sm:h-12 flex flex-col justify-end sm:hidden min-h-[120px]">
+                        <div className="flex-1 w-full text-neutral-500 text-left font-light text-sm sm:text-lg mb-4 sm:mt-4 sm:mb-2 sm:h-12 flex flex-col justify-end sm:hidden min-h-[120px]">
                           <div className="space-y-1">
                             <p>info@nupips.com</p>
                           </div>
@@ -154,10 +147,10 @@ const CTA = () => {
                           href="mailto:info@nupips.com?body=I was browsing your website and "
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="border border-[#FF5B19] block sm:hidden bg-[#FF5B19] hover:bg-black hover:border hover:border-[#FF5B19] text-white px-4 py-2 sm:px-8 sm:py-3 rounded-md text-sm sm:text-xl font-hehe transition-colors"
+                          className="border border-[#FF5B19] block sm:hidden -black px-4 py-2 sm:px-8 sm:py-3 rounded-md text-sm sm:text-xl font-hehe transition-colors"
                         >
                           <ShimmerButton
-                            className="group relative z-0 cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-white/10 px-6 py-3 text-white transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px sm:hidden block"
+                            className="group relative z-0 cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-black/10 px-6 py-3 -black transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px sm:hidden block"
                             style={{
                               "--spread": "90deg",
                               "--shimmer-color": "#FF5B19",
@@ -174,7 +167,7 @@ const CTA = () => {
                       </div>
                     </div>
                     <div className="hidden sm:flex flex-col items-start justify-start sm:ml-auto">
-                      <div className="sm:w-52 text-[#B1B1B1] text-left font-light text-lg mb-2 sm:h-12 flex flex-col justify-center">
+                      <div className="sm:w-52 text-neutral-500 text-left font-light text-lg mb-2 sm:h-12 flex flex-col justify-center">
                         <p>info@nupips.com</p>
                       </div>
                       <a
@@ -183,7 +176,7 @@ const CTA = () => {
                         rel="noopener noreferrer"
                       >
                         <ShimmerButton
-                          className="group relative z-0 cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-white/10 px-6 py-3 text-white transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px hidden sm:block"
+                          className="group relative z-0 cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-black/10 px-6 py-3 -black transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px hidden sm:block"
                           style={{
                             "--spread": "90deg",
                             "--shimmer-color": "#FF5B19",
@@ -212,9 +205,9 @@ const CTA = () => {
         >
           <h2 className="text-3xl font-semibold mb-20 sm:mb-24">
             Connect
-            <br /> <span className="text-[#B1B1B1]">with us</span>
+            <br /> <span className="text-neutral-500">with us</span>
           </h2>
-          {/* <p className="text-[#B1B1B1] text-sm sm:text-lg my-4">
+          {/* <p className="text-neutral-500 text-sm sm:text-lg my-4">
             Follow us on social media to stay <br className="hidden sm:block" />{" "}
             updated <br className="sm:hidden" /> with the latest news,{" "}
             <br className="hidden sm:block" />
@@ -228,7 +221,7 @@ const CTA = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ "--theme-color": "#000000" }}
-                className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 relative overflow-hidden group"
+                className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-neutral-500 hover:-black transition-all duration-300 relative overflow-hidden group"
               >
                 <svg
                   width="17"
@@ -253,7 +246,7 @@ const CTA = () => {
                   "--theme-color":
                     "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)",
                 }}
-                className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 relative overflow-hidden group"
+                className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-neutral-500 hover:-black transition-all duration-300 relative overflow-hidden group"
               >
                 <Instagram size={16} />
               </a> */}
@@ -264,7 +257,7 @@ const CTA = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ "--theme-color": "#1877F2" }}
-                className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 relative overflow-hidden group"
+                className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-neutral-500 hover:-black transition-all duration-300 relative overflow-hidden group"
               >
                 <Facebook size={16} />
               </a> */}
@@ -275,7 +268,7 @@ const CTA = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ "--theme-color": "#FF0000" }}
-                className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 relative overflow-hidden group"
+                className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-neutral-500 hover:-black transition-all duration-300 relative overflow-hidden group"
               >
                 <Youtube size={16} />
               </a> */}

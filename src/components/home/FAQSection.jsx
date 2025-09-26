@@ -38,7 +38,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="text-white py-16 sm:py-20">
+    <section className="-black py-16 sm:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center space-y-12">
           {/* Header */}
@@ -49,10 +49,10 @@ const FAQSection = () => {
             >
               Algorithmic Trading
               <br className="sm:block hidden" />
-              <span className="text-neutral-400">Questions</span>
+              <span className="text-neutral-500">Questions</span>
             </h2>
             <p
-              className="text-xl text-neutral-400 font-normal leading-relaxed max-w-3xl mx-auto"
+              className="text-xl text-neutral-500 font-normal leading-relaxed max-w-3xl mx-auto"
               style={{ opacity: 1, transform: "none" }}
             >
               New to algorithmic trading or optimizing existing strategies? Our
@@ -66,19 +66,19 @@ const FAQSection = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-black border-2 border-white/10 rounded-lg"
+                className="bg-white border-2 border-black/10 rounded-lg"
               >
                 <button
                   className="w-full flex justify-between items-center text-left p-5 md:p-6 focus:outline-none"
                   onClick={() => toggleFAQ(index)}
                 >
-                  <span className="sm:text-xl text-lg font-semibold text-white">
+                  <span className="sm:text-xl text-lg font-semibold -black">
                     {faq.question}
                   </span>
                   {openFAQ === index ? (
-                    <Minus className="text-white flex-shrink-0 ml-4 w-5 h-5" />
+                    <Minus className="-black flex-shrink-0 ml-4 w-5 h-5" />
                   ) : (
-                    <Plus className="text-white flex-shrink-0 ml-4 w-5 h-5" />
+                    <Plus className="-black flex-shrink-0 ml-4 w-5 h-5" />
                   )}
                 </button>
 
@@ -87,7 +87,7 @@ const FAQSection = () => {
                     className="overflow-hidden"
                     style={{ opacity: 1, height: "auto", marginTop: "0px" }}
                   >
-                    <div className="px-5 md:px-6 pb-5 md:pb-6 sm:text-xl text-base font-normal text-[#B2B2B2]">
+                    <div className="px-5 md:px-6 pb-5 md:pb-6 sm:text-xl text-base font-normal text-neutral-500">
                       {faq.answer}
                     </div>
                   </div>

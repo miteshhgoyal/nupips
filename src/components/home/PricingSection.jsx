@@ -61,13 +61,13 @@ const PricingSection = () => {
     <div className="flex items-center justify-center py-16 sm:py-20">
       <div className="bg-transparent flex flex-col items-center justify-center px-4 space-y-16">
         <div style={{ opacity: 1, filter: "blur(0px)", transform: "none" }}>
-          <div className="w-full mb-16 max-w-6xl mx-auto text-white">
+          <div className="w-full mb-16 max-w-6xl mx-auto -black">
             {/* Header */}
             <div className="text-center mb-12">
               <h1 className="text-2xl sm:text-4xl font-bold mb-4">
                 Pricing Plans
               </h1>
-              <p className="text-gray-400 text-sm sm:text-base px-2 sm:px-0 max-w-2xl mx-auto">
+              <p className="text-neutral-500 text-sm sm:text-base px-2 sm:px-0 max-w-2xl mx-auto">
                 We offer flexible plans for different needs
               </p>
             </div>
@@ -79,8 +79,8 @@ const PricingSection = () => {
                   key={index}
                   className={`relative p-8 rounded-lg border ${
                     plan.popular
-                      ? "border-primary bg-black/60 transform scale-105"
-                      : "border-white/10 bg-black/30"
+                      ? "border-primary bg-white/60 transform scale-105"
+                      : "border-black/10 bg-white/30"
                   } hover:border-primary/50 transition-all duration-300`}
                 >
                   {plan.popular && (
@@ -93,7 +93,7 @@ const PricingSection = () => {
 
                   <div className="text-center mb-8">
                     <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
-                    <p className="text-neutral-400 text-sm mb-4">
+                    <p className="text-neutral-500 text-sm mb-4">
                       {plan.description}
                     </p>
                     <div className="text-2xl font-bold text-primary">
@@ -105,7 +105,7 @@ const PricingSection = () => {
                     {plan.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center">
                         <Check className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
-                        <span className="text-neutral-300 text-sm">
+                        <span className="text-neutral-500 text-sm">
                           {feature}
                         </span>
                       </li>
@@ -115,8 +115,8 @@ const PricingSection = () => {
                   <button
                     className={`w-full py-3 px-6 rounded-lg font-medium transition-colors ${
                       plan.popular
-                        ? "bg-primary text-white hover:bg-primary/90"
-                        : "border border-white/20 text-white hover:bg-white/10"
+                        ? "bg-primary -black hover:bg-primary/90"
+                        : "border border-black/20 -black hover:bg-white/10"
                     }`}
                   >
                     Get Started
@@ -130,7 +130,7 @@ const PricingSection = () => {
               <h2 className="text-2xl sm:text-3xl font-bold mb-8">
                 How It Works
               </h2>
-              <p className="text-lg text-neutral-400 mb-12">
+              <p className="text-lg text-neutral-500 mb-12">
                 Simple 4-Step Process
               </p>
 
@@ -163,7 +163,7 @@ const PricingSection = () => {
                       {step.number}
                     </div>
                     <h3 className="text-lg font-semibold mb-4">{step.title}</h3>
-                    <p className="text-neutral-400 text-sm">
+                    <p className="text-neutral-500 text-sm">
                       {step.description}
                     </p>
                   </div>
