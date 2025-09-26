@@ -50,13 +50,7 @@ const HeroSection = () => {
             </h1>
 
             {/* Paragraph */}
-            <p
-              className="text-base text-white sm:text-lg text-balance -black max-w-xl mx-auto mb-3 leading-relaxed"
-              style={{
-                textShadow:
-                  "3px 3px 6px rgba(0, 0, 0, 1), 0 0 12px rgba(0, 0, 0, 0.7), 1px 1px 0px rgba(0, 0, 0, 0.9)",
-              }}
-            >
+            <p className="text-base text-white sm:text-lg text-balance -black max-w-xl mx-auto mb-3 leading-relaxed">
               <span className="font-bold">
                 Nupips builds next-generation algorithmic trading bots
               </span>
