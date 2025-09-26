@@ -71,7 +71,7 @@ const TestimonialsSection = () => {
                     className="relative w-[350px] max-w-full shrink-0 rounded-2xl p-[2px] md:w-[400px]"
                     style={{
                       background:
-                        "linear-gradient(to bottom, #B12424, #FF5B19)",
+                        "linear-gradient(to bottom right, #FF5B19, #7771)",
                     }}
                   >
                     <div className="bg-white rounded-2xl px-8 py-8 h-full flex flex-col justify-between">
@@ -101,7 +101,7 @@ const TestimonialsSection = () => {
                     className="relative w-[350px] max-w-full shrink-0 rounded-2xl p-[2px] md:w-[400px]"
                     style={{
                       background:
-                        "linear-gradient(to bottom, #B12424, #FF5B19)",
+                        "linear-gradient(to bottom right, #FF5B19, #7771)",
                     }}
                   >
                     <div className="bg-white rounded-2xl px-8 py-8 h-full flex flex-col justify-between">
