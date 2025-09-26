@@ -13,7 +13,7 @@ function page() {
         <>
             <HeroSection />
             <FeaturesSection />
-            <PricingSection />
+            {/* <PricingSection /> */}
             <ComparisonSection />
 
             <FeaturesGrid />

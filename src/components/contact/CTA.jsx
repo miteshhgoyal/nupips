@@ -147,15 +147,11 @@ const CTA = () => {
                         </div>
                         <div className="flex-1 w-full text-[#B1B1B1] text-left font-light text-sm sm:text-lg mb-4 sm:mt-4 sm:mb-2 sm:h-12 flex flex-col justify-end sm:hidden min-h-[120px]">
                           <div className="space-y-1">
-                            <p>
-                              support@
-                              <br />
-                              nupips.com
-                            </p>
+                            <p>info@nupips.com</p>
                           </div>
                         </div>
                         <a
-                          href="mailto:support@nupips.com?body=I was browsing your website and "
+                          href="mailto:info@nupips.com?body=I was browsing your website and "
                           target="_blank"
                           rel="noopener noreferrer"
                           className="border border-[#FF5B19] block sm:hidden bg-[#FF5B19] hover:bg-black hover:border hover:border-[#FF5B19] text-white px-4 py-2 sm:px-8 sm:py-3 rounded-md text-sm sm:text-xl font-hehe transition-colors"
@@ -179,10 +175,10 @@ const CTA = () => {
                     </div>
                     <div className="hidden sm:flex flex-col items-start justify-start sm:ml-auto">
                       <div className="sm:w-52 text-[#B1B1B1] text-left font-light text-lg mb-2 sm:h-12 flex flex-col justify-center">
-                        <p>support@nupips.com</p>
+                        <p>info@nupips.com</p>
                       </div>
                       <a
-                        href="mailto:support@nupips.com?body=I was browsing your website and "
+                        href="mailto:info@nupips.com?body=I was browsing your website and "
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -218,16 +214,16 @@ const CTA = () => {
             Connect
             <br /> <span className="text-[#B1B1B1]">with us</span>
           </h2>
-          <p className="text-[#B1B1B1] text-sm sm:text-lg my-4">
+          {/* <p className="text-[#B1B1B1] text-sm sm:text-lg my-4">
             Follow us on social media to stay <br className="hidden sm:block" />{" "}
             updated <br className="sm:hidden" /> with the latest news,{" "}
             <br className="hidden sm:block" />
             events, and <br className="sm:hidden" /> developments.
-          </p>
+          </p> */}
           <div>
             <div className="flex pb-6 space-x-3">
               {/* Twitter/X */}
-              <a
+              {/* <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -246,10 +242,10 @@ const CTA = () => {
                     fill="white"
                   />
                 </svg>
-              </a>
+              </a> */}
 
               {/* Instagram */}
-              <a
+              {/* <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -260,10 +256,10 @@ const CTA = () => {
                 className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 relative overflow-hidden group"
               >
                 <Instagram size={16} />
-              </a>
+              </a> */}
 
               {/* Facebook */}
-              <a
+              {/* <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -271,10 +267,10 @@ const CTA = () => {
                 className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 relative overflow-hidden group"
               >
                 <Facebook size={16} />
-              </a>
+              </a> */}
 
               {/* YouTube */}
-              <a
+              {/* <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -282,7 +278,7 @@ const CTA = () => {
                 className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 relative overflow-hidden group"
               >
                 <Youtube size={16} />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

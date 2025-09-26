@@ -36,10 +36,6 @@ const AboutSection = () => {
             </p>
 
             <div className="mt-12">
-              <h3 className="text-xl sm:text-2xl font-semibold text-primary mb-6 text-center">
-                Why Choose Nupips?
-              </h3>
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex items-start space-x-3 p-4 bg-black/30 rounded-lg border border-white/10">
                   <div>

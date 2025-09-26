@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from 'react';
 import { Menu, X, TrendingUp } from 'lucide-react';
-import ShimmerButton from './ui/ShimmerButton';
+import logo from '../assets/nupips-logo.png';
+import Image from 'next/image';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -23,11 +24,17 @@ const Navbar = () => {
                     borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
                 }}
             >
-                {/* Logo */}
+                {/* Logo - Desktop */}
                 <a href="/" className="relative flex items-center space-x-2 z-[60] flex-shrink-0">
-                    <h3 className="text-xl sm:text-3xl font-semibold text-primary leading-tight">
-                        Nupips
-                    </h3>
+                    <Image
+                        src={logo}
+                        width={160}
+                        height={60}
+                        alt="Nupips Logo"
+                        sizes="(max-width: 1024px) 140px, 160px"
+                        className="w-auto h-auto max-w-[160px] max-h-[60px]"
+                        priority
+                    />
                 </a>
 
                 {/* Navigation Links - Centered */}
@@ -59,14 +66,18 @@ const Navbar = () => {
                 {/* Mobile Header */}
                 <div className="flex w-full items-center justify-between px-4 py-3">
                     <a href="/" className="relative flex items-center space-x-2 z-[60]">
-                        <h3 className="text-xl sm:text-3xl font-semibold text-primary leading-tight">
-                            Nupips
-                        </h3>
+                        <Image
+                            src={logo}
+                            width={160}
+                            height={60}
+                            alt="Nupips Logo"
+                            sizes="(max-width: 480px) 100px, (max-width: 768px) 120px, 140px"
+                            className="w-auto h-auto max-w-[100px] max-h-[38px] sm:max-w-[120px] sm:max-h-[45px] md:max-w-[140px] md:max-h-[52px]"
+                            priority
+                        />
                     </a>
 
                     <div className='flex items-center gap-1'>
-
-
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                             className="text-white p-2 hover:bg-white/10 rounded-lg transition-colors duration-200"
