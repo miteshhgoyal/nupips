@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Menu, X, TrendingUp } from 'lucide-react';
 import logo from '../assets/nupips-logo.png';
 import Image from 'next/image';
+import ShimmerButton from './ui/ShimmerButton';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -52,6 +53,18 @@ const Navbar = () => {
                         ))}
                     </div>
                 </div>
+                {/* Action Buttons */}
+                <div className="flex items-center gap-3 flex-shrink-0">
+                    <ShimmerButton
+                        href="#"
+                        variant="gradient"
+                        size="sm"
+                        className="flex items-center gap-2"
+                    >
+
+                        Login
+                    </ShimmerButton>
+                </div>
             </div>
 
             {/* Mobile Navigation */}
@@ -80,7 +93,7 @@ const Navbar = () => {
                     <div className='flex items-center gap-1'>
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="-black p-2 hover:bg-white/10 rounded-lg transition-colors duration-200"
+                            className="text-white p-2 hover:bg-white/10 rounded-lg transition-colors duration-200"
                             aria-label="Toggle menu"
                         >
                             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -96,12 +109,23 @@ const Navbar = () => {
                             <a
                                 key={index}
                                 href={link.href}
-                                className="block px-2 py-1 -black hover:text-primary hover:bg-white/5 rounded-lg transition-all duration-200 font-medium"
+                                className="block px-2 py-1 text-white hover:text-primary hover:bg-white/5 rounded-lg transition-all duration-200 font-medium"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 {link.label}
                             </a>
                         ))}
+                        <div className="pt-4 w-fit">
+                            <ShimmerButton
+                                href="#"
+                                variant="gradient"
+                                size="sm"
+                                className="flex items-center justify-center gap-2 w-full"
+                            >
+
+                                Login
+                            </ShimmerButton>
+                        </div>
                     </div>
                 </div>
             </div>
