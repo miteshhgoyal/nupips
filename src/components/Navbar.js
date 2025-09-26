@@ -19,7 +19,7 @@ const Navbar = () => {
             <div
                 className="relative z-[50] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between px-4 py-4 lg:flex"
                 style={{
-                    background: 'rgba(0, 0, 0, 0.1)',
+                    background: 'rgba(0, 0, 0, 0.5)',
                     backdropFilter: 'blur(10px)',
                     borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
                 }}

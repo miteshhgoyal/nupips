@@ -57,7 +57,7 @@ const Footer = () => {
 
     return (
         <footer
-            className="relative z-50 -black backdrop-blur-sm border-2 bg-black/10 border-gray-500/10 py-12 md:py-20 px-4 sm:px-6 lg:px-8 bottom-0 left-0 right-0 sm:mt-48 mt-24"
+            className="relative z-50 -black backdrop-blur-sm border-2 bg-black/50 border-gray-500/10 py-12 md:py-20 px-4 sm:px-6 lg:px-8 bottom-0 left-0 right-0 sm:mt-48 mt-24"
             style={{
                 zIndex: 20,
                 opacity: 1,
@@ -78,12 +78,12 @@ const Footer = () => {
                                 className="w-auto h-auto max-w-[120px] max-h-[45px] sm:max-w-[140px] sm:max-h-[52px] md:max-w-[160px] md:max-h-[60px]"
                             />
 
-                            <h3 className="text-xl my-6 sm:my-10 sm:text-3xl font-semibold text-primary leading-tight">
+                            <h3 className="text-xl my-6 sm:my-10 sm:text-3xl lg:text-5xl lg:max-w-sm lg:leading-12 lg:py-2 font-semibold leading-tight bg-gradient-to-br from-white via-primary to-primary bg-clip-text text-transparent">
                                 Start Automated Trading Today!
                             </h3>
 
                             <div className="flex space-x-4 mb-12">
-                                <a href='/contact' className="border border-black -black px-6 py-3 rounded-[10px] bg-transparent hover:bg-white/10 transition-all duration-300 font-medium">
+                                <a href='/contact' className="border border-white text-white px-6 py-3 rounded-[10px] bg-transparent hover:bg-white/10 transition-all duration-300 font-medium">
                                     Talk To Us
                                 </a>
                             </div>
@@ -102,7 +102,7 @@ const Footer = () => {
                                         href={social.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-neutral-500 hover:-black transition-all duration-300 relative overflow-hidden group"
+                                        className="w-9 h-9 bg-[#2A2A2A] rounded-full flex items-center justify-center text-neutral-100 hover:-black transition-all duration-300 relative overflow-hidden group"
                                         style={{ '--theme-color': social.color }}
                                     >
                                         <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"
@@ -118,10 +118,10 @@ const Footer = () => {
                         <div className="flex w-full gap-6 sm:gap-12">
                             {/* Useful Links */}
                             <div className="space-y-3">
-                                <h4 className="text-lg font-semibold text-neutral-500 mb-3">
+                                <h4 className="text-lg font-semibold text-neutral-100 mb-3">
                                     Useful Links
                                 </h4>
-                                <ul className="space-y-2.5 text-sm text-neutral-500">
+                                <ul className="space-y-2.5 text-sm text-neutral-100">
                                     {usefulLinks.map((link, index) => (
                                         <li key={index}>
                                             <Link
@@ -137,10 +137,10 @@ const Footer = () => {
 
                             {/* Legal Links */}
                             {/* <div className="space-y-3">
-                                <h4 className="text-lg font-semibold text-neutral-500 mb-3">
+                                <h4 className="text-lg font-semibold text-neutral-100 mb-3">
                                     Legal
                                 </h4>
-                                <ul className="space-y-2.5 text-sm text-neutral-500">
+                                <ul className="space-y-2.5 text-sm text-neutral-100">
                                     {legalLinks.map((link, index) => (
                                         <li key={index}>
                                             <Link
@@ -156,10 +156,10 @@ const Footer = () => {
 
                             {/* Contact Links */}
                             {/* <div className="space-y-3">
-                                <h4 className="text-lg font-semibold text-neutral-500 mb-3">
+                                <h4 className="text-lg font-semibold text-neutral-100 mb-3">
                                     Contact Us
                                 </h4>
-                                <ul className="space-y-2.5 text-sm text-neutral-500">
+                                <ul className="space-y-2.5 text-sm text-neutral-100">
                                     {contactLinks.map((link, index) => (
                                         <li key={index}>
                                             <Link
@@ -179,11 +179,11 @@ const Footer = () => {
 
             {/* Bottom Section - Copyright & Legal Text */}
             <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-700/50">
-                <p className="text-sm text-neutral-500 mb-4">
+                <p className="text-sm text-neutral-100 mb-4">
                     © 2025 Nupips. All rights reserved.
                 </p>
 
-                <div className="text-xs text-neutral-500 space-y-4">
+                <div className="text-xs text-neutral-100 space-y-4">
                     <p>
                         Nupips provides comprehensive forex and algorithmic trading evaluation programs for aspiring traders.
                         All trading activities are conducted in a simulated environment that mirrors real forex market conditions,
