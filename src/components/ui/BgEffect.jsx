@@ -2,7 +2,8 @@ import React from "react";
 
 const BgEffect = () => {
   return (
-    <div>
+    <div className="">
+      <div className="fixed inset-0 bg-white/50 z-10"></div>
       <div className="jsx-f07b767378fb732b fixed inset-0 pointer-events-none z-0 overflow-hidden">
         {/* Original Blob Effects */}
         <div className="jsx-f07b767378fb732b absolute bottom-[-38%] left-[-10%] w-[30rem] h-[30rem] lg:w-[38rem] lg:h-[34rem] 2xl:w-[40rem] 2xl:h-[40rem] bg-gradient-to-r from-white to-[#5E5E5E] opacity-40 rounded-full animate-blob animation-delay-2 blur-0 lg:blur-[80px] max-md:blur-[200px]"></div>
