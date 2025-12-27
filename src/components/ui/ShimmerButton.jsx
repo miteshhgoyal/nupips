@@ -1,5 +1,5 @@
 import React from "react";
-import { MessageCircle } from "lucide-react"; // Add this import for the icon
+import { MessageCircle } from "lucide-react";
 
 const ShimmerButton = ({
   children,
@@ -9,6 +9,8 @@ const ShimmerButton = ({
   href = "",
   onClick,
   icon: Icon,
+  target,
+  rel,
   ...props
 }) => {
   // Variant configurations
@@ -60,9 +62,14 @@ const ShimmerButton = ({
     "--bg": currentVariant.bg,
   };
 
+  // Check if it's an external link
+  const isExternal = href.startsWith("http://") || href.startsWith("https://");
+
   return (
     <a
       href={href}
+      target={target}
+      rel={rel}
       style={buttonStyle}
       className={`group relative z-0 text-white flex cursor-pointer items-center justify-center font-medium gap-2 overflow-hidden whitespace-nowrap border ${currentVariant.borderColor} ${currentSize} -black [background:var(--bg)] [border-radius:var(--radius)] transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px ${className}`}
       onClick={onClick}
