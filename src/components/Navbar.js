@@ -56,12 +56,13 @@ const Navbar = () => {
                 {/* Action Buttons */}
                 <div className="flex items-center gap-3 flex-shrink-0">
                     <ShimmerButton
-                        href="/login"
+                        href="https://user.nupips.com/login"
                         variant="gradient"
                         size="sm"
                         className="flex items-center gap-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-
                         Login
                     </ShimmerButton>
                 </div>
@@ -117,12 +118,13 @@ const Navbar = () => {
                         ))}
                         <div className="pt-4 w-fit">
                             <ShimmerButton
-                                href="/login"
+                                href="https://user.nupips.com/login"
                                 variant="gradient"
                                 size="sm"
                                 className="flex items-center justify-center gap-2 w-full"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-
                                 Login
                             </ShimmerButton>
                         </div>
